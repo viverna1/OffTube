@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'SNPro';
+    src: url('/static/SNPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'SNPro', sans-serif;
+}
+
+body {
+    background-color: #18191b;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+
+header {
+    box-sizing: border-box;
+    width: 100%;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+
+.header-btn {
+    display: flex;
+    background: none;
+    border: none;
+    color: var(--whiteColor);
+    cursor: pointer;
+    font-size: 120%;
+    padding: 5px;
+    height: 64%;
+    aspect-ratio: 1/1;
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+#title {
+    user-select: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+
+main {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
