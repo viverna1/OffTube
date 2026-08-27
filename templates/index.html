@@ -10,21 +10,17 @@
             {% if video.id %}
                 {% set video_param = video.id %}
             {% else %}
-                {% set video_param = video.full_name %}
+                {% set video_param = video.filename %}
             {% endif %}
             
-            <a class="video" href="{{ url_for('watch', v=video_param) }}">
+            <a class="video" href="{{ url_for('watch', v=video_param) }}" data-id="{{ video_param }}">
                 {% if video.thumbnail %}
                     <img class="video-thumbnail" src="{{ url_for('static', filename='thumbnails/' + video.thumbnail) }}" alt="▶">
                 {% else %}
                     <!-- <div class="video-thumbnail video-thumbnail-placeholder">▶</div> -->
                     <div class="video-thumbnail video-thumbnail-placeholder">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-
-                            <!-- Треугольник вырезается маской — через него видно фон страницы -->
                             <circle cx="50" cy="50" r="48" fill="white" clip-path="url(#circleClip)"/>
-
-                            <!-- Вырезанный треугольник (плей-кнопка) -->
                             <polygon points="38,28 38,72 72,50" fill="#434343"/>
                         </svg>
                     </div>
@@ -33,4 +29,8 @@
             </a>
         {% endfor %}
     </main>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock %}
