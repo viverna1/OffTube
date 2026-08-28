@@ -1,570 +1,570 @@
 [
     {
-        "id": null,
+        "id": "1",
         "name": "vid",
         "filename": "vid.mkv",
         "path": "G:\\Git\\Dev\\OffTube\\static\\vids\\vid.mkv",
-        "thumbnail": "vid.jpg",
-        "duration": 686.548
+        "thumbnail": "vid.mkv.jpg",
+        "duration": null
     },
     {
         "id": "XYb4zclX5-U",
-        "name": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC",
+        "name": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U]",
         "filename": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].mkv",
         "path": "G:\\Git\\Dev\\OffTube\\static\\vids\\ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].mkv",
-        "thumbnail": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].jpg",
-        "duration": 1105.028
+        "thumbnail": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].mkv.jpg",
+        "duration": null
     },
     {
         "id": "s3bqZPIipmA",
-        "name": "Опять 25 ( Minecraft )",
+        "name": "Опять 25 ( Minecraft ) [s3bqZPIipmA]",
         "filename": "Опять 25 ( Minecraft ) [s3bqZPIipmA].mkv",
         "path": "G:\\Git\\Dev\\OffTube\\static\\vids\\Опять 25 ( Minecraft ) [s3bqZPIipmA].mkv",
-        "thumbnail": "Опять 25 ( Minecraft ) [s3bqZPIipmA].jpg",
-        "duration": 745.788
+        "thumbnail": "Опять 25 ( Minecraft ) [s3bqZPIipmA].mkv.jpg",
+        "duration": null
     },
     {
         "id": "zr2Bfk258ZQ",
-        "name": "100 Дней Хардкора в Raft",
+        "name": "100 Дней Хардкора в Raft [zr2Bfk258ZQ]",
         "filename": "100 Дней Хардкора в Raft [zr2Bfk258ZQ].mkv",
         "path": "G:\\Media\\youtube\\1\\100 Дней Хардкора в Raft [zr2Bfk258ZQ].mkv",
-        "thumbnail": "100 Дней Хардкора в Raft [zr2Bfk258ZQ].jpg",
-        "duration": 6249.808
+        "thumbnail": "100 Дней Хардкора в Raft [zr2Bfk258ZQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "BajjL9Jknm4",
-        "name": "100 Дней Хардкора в Sons of the Forest",
+        "name": "100 Дней Хардкора в Sons of the Forest [BajjL9Jknm4]",
         "filename": "100 Дней Хардкора в Sons of the Forest [BajjL9Jknm4].mkv",
         "path": "G:\\Media\\youtube\\1\\100 Дней Хардкора в Sons of the Forest [BajjL9Jknm4].mkv",
-        "thumbnail": "100 Дней Хардкора в Sons of the Forest [BajjL9Jknm4].jpg",
-        "duration": 5752.588
+        "thumbnail": "100 Дней Хардкора в Sons of the Forest [BajjL9Jknm4].mkv.jpg",
+        "duration": null
     },
     {
         "id": "nAl9LuK08mw",
-        "name": "25 Забегов в Noita",
+        "name": "25 Забегов в Noita [nAl9LuK08mw]",
         "filename": "25 Забегов в Noita [nAl9LuK08mw].mkv",
         "path": "G:\\Media\\youtube\\1\\25 Забегов в Noita [nAl9LuK08mw].mkv",
-        "thumbnail": "25 Забегов в Noita [nAl9LuK08mw].jpg",
-        "duration": 4020.008
+        "thumbnail": "25 Забегов в Noita [nAl9LuK08mw].mkv.jpg",
+        "duration": null
     },
     {
         "id": "HJamSFI9USo",
-        "name": "50 Дней в Voices of The Void",
+        "name": "50 Дней в Voices of The Void [HJamSFI9USo]",
         "filename": "50 Дней в Voices of The Void [HJamSFI9USo].mkv",
         "path": "G:\\Media\\youtube\\1\\50 Дней в Voices of The Void [HJamSFI9USo].mkv",
-        "thumbnail": "50 Дней в Voices of The Void [HJamSFI9USo].jpg",
-        "duration": 7368.528
+        "thumbnail": "50 Дней в Voices of The Void [HJamSFI9USo].mkv.jpg",
+        "duration": null
     },
     {
         "id": "1WsfCaSE12Q",
-        "name": "60 Забегов в Noita",
+        "name": "60 Забегов в Noita [1WsfCaSE12Q]",
         "filename": "60 Забегов в Noita [1WsfCaSE12Q].mkv",
         "path": "G:\\Media\\youtube\\1\\60 Забегов в Noita [1WsfCaSE12Q].mkv",
-        "thumbnail": "60 Забегов в Noita [1WsfCaSE12Q].jpg",
-        "duration": 3448.008
+        "thumbnail": "60 Забегов в Noita [1WsfCaSE12Q].mkv.jpg",
+        "duration": null
     },
     {
         "id": "7fDsaIIbAKo",
-        "name": "Can you beat Deathworld with NO WEAPONS？",
+        "name": "Can you beat Deathworld with NO WEAPONS？ [7fDsaIIbAKo]",
         "filename": "Can you beat Deathworld with NO WEAPONS？ [7fDsaIIbAKo].mkv",
         "path": "G:\\Media\\youtube\\1\\Can you beat Deathworld with NO WEAPONS？ [7fDsaIIbAKo].mkv",
-        "thumbnail": "Can you beat Deathworld with NO WEAPONS？ [7fDsaIIbAKo].jpg",
-        "duration": 3841.588
+        "thumbnail": "Can you beat Deathworld with NO WEAPONS？ [7fDsaIIbAKo].mkv.jpg",
+        "duration": null
     },
     {
         "id": "vIsqFw_MYDA",
-        "name": "So.. I changed the water's code",
+        "name": "So.. I changed the water's code [vIsqFw_MYDA]",
         "filename": "So.. I changed the water's code [vIsqFw_MYDA].mkv",
         "path": "G:\\Media\\youtube\\1\\So.. I changed the water's code [vIsqFw_MYDA].mkv",
-        "thumbnail": "So.. I changed the water's code [vIsqFw_MYDA].jpg",
-        "duration": 686.548
+        "thumbnail": "So.. I changed the water's code [vIsqFw_MYDA].mkv.jpg",
+        "duration": null
     },
     {
         "id": "9m8JkoelzZw",
-        "name": "TORCH ENDS STOCKFISH!!!!!",
+        "name": "TORCH ENDS STOCKFISH!!!!! [9m8JkoelzZw]",
         "filename": "TORCH ENDS STOCKFISH!!!!! [9m8JkoelzZw].mkv",
         "path": "G:\\Media\\youtube\\1\\TORCH ENDS STOCKFISH!!!!! [9m8JkoelzZw].mkv",
-        "thumbnail": "TORCH ENDS STOCKFISH!!!!! [9m8JkoelzZw].jpg",
-        "duration": 1913.228
+        "thumbnail": "TORCH ENDS STOCKFISH!!!!! [9m8JkoelzZw].mkv.jpg",
+        "duration": null
     },
     {
         "id": "U78KsE6HAKQ",
-        "name": "VR комната ( VR эксперимент⧸ MADiSON VR )",
+        "name": "VR комната ( VR эксперимент⧸ MADiSON VR ) [U78KsE6HAKQ]",
         "filename": "VR комната ( VR эксперимент⧸ MADiSON VR ) [U78KsE6HAKQ].mkv",
         "path": "G:\\Media\\youtube\\1\\VR комната ( VR эксперимент⧸ MADiSON VR ) [U78KsE6HAKQ].mkv",
-        "thumbnail": "VR комната ( VR эксперимент⧸ MADiSON VR ) [U78KsE6HAKQ].jpg",
-        "duration": 744.088
+        "thumbnail": "VR комната ( VR эксперимент⧸ MADiSON VR ) [U78KsE6HAKQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "HUF-jWGPNHI",
-        "name": "What is the FASTEST way to TUNNEL in Minecraft",
+        "name": "What is the FASTEST way to TUNNEL in Minecraft [HUF-jWGPNHI]",
         "filename": "What is the FASTEST way to TUNNEL in Minecraft [HUF-jWGPNHI].mkv",
         "path": "G:\\Media\\youtube\\1\\What is the FASTEST way to TUNNEL in Minecraft [HUF-jWGPNHI].mkv",
-        "thumbnail": "What is the FASTEST way to TUNNEL in Minecraft [HUF-jWGPNHI].jpg",
-        "duration": 469.528
+        "thumbnail": "What is the FASTEST way to TUNNEL in Minecraft [HUF-jWGPNHI].mkv.jpg",
+        "duration": null
     },
     {
         "id": "5WDL4Dc8B64",
-        "name": "АНАРХИЯ - МОЩНЕЙШАЯ КИРКА на проекте",
+        "name": "АНАРХИЯ - МОЩНЕЙШАЯ КИРКА на проекте [5WDL4Dc8B64]",
         "filename": "АНАРХИЯ - МОЩНЕЙШАЯ КИРКА на проекте [5WDL4Dc8B64].mkv",
         "path": "G:\\Media\\youtube\\1\\АНАРХИЯ - МОЩНЕЙШАЯ КИРКА на проекте [5WDL4Dc8B64].mkv",
-        "thumbnail": "АНАРХИЯ - МОЩНЕЙШАЯ КИРКА на проекте [5WDL4Dc8B64].jpg",
-        "duration": 1723.308
+        "thumbnail": "АНАРХИЯ - МОЩНЕЙШАЯ КИРКА на проекте [5WDL4Dc8B64].mkv.jpg",
+        "duration": null
     },
     {
         "id": "VroASSmCTRc",
-        "name": "В Майнкрафте Кончился ВОЗДУХ...",
+        "name": "В Майнкрафте Кончился ВОЗДУХ... [VroASSmCTRc]",
         "filename": "В Майнкрафте Кончился ВОЗДУХ... [VroASSmCTRc].mkv",
         "path": "G:\\Media\\youtube\\1\\В Майнкрафте Кончился ВОЗДУХ... [VroASSmCTRc].mkv",
-        "thumbnail": "В Майнкрафте Кончился ВОЗДУХ... [VroASSmCTRc].jpg",
-        "duration": 879.088
+        "thumbnail": "В Майнкрафте Кончился ВОЗДУХ... [VroASSmCTRc].mkv.jpg",
+        "duration": null
     },
     {
         "id": "RRtsCOPLH3k",
-        "name": "Водный мир ► 30 часов хардкора ► События каждые 10 минут! ► Oxygen not included ► Spaced Out",
+        "name": "Водный мир ► 30 часов хардкора ► События каждые 10 минут! ► Oxygen not included ► Spaced Out [RRtsCOPLH3k]",
         "filename": "Водный мир ► 30 часов хардкора ► События каждые 10 минут! ► Oxygen not included ► Spaced Out [RRtsCOPLH3k].mkv",
         "path": "G:\\Media\\youtube\\1\\Водный мир ► 30 часов хардкора ► События каждые 10 минут! ► Oxygen not included ► Spaced Out [RRtsCOPLH3k].mkv",
-        "thumbnail": "Водный мир ► 30 часов хардкора ► События каждые 10 минут! ► Oxygen not included ► Spaced Out [RRtsCOPLH3k].jpg",
-        "duration": 11870.928
+        "thumbnail": "Водный мир ► 30 часов хардкора ► События каждые 10 минут! ► Oxygen not included ► Spaced Out [RRtsCOPLH3k].mkv.jpg",
+        "duration": null
     },
     {
         "id": "XYb4zclX5-U",
-        "name": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC",
+        "name": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U]",
         "filename": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].mkv",
         "path": "G:\\Media\\youtube\\1\\ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].mkv",
-        "thumbnail": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].jpg",
-        "duration": 1105.028
+        "thumbnail": "ВОТ ПОЧЕМУ НЕ СТОИТ СТРОИТЬ ТЫСЯЧИ АЭРОПОРТОВ ｜ PLAGUE INC [XYb4zclX5-U].mkv.jpg",
+        "duration": null
     },
     {
         "id": "bKB-XsudYuw",
-        "name": "Гора приколов ( PEAK )",
+        "name": "Гора приколов ( PEAK ) [bKB-XsudYuw]",
         "filename": "Гора приколов ( PEAK ) [bKB-XsudYuw].mkv",
         "path": "G:\\Media\\youtube\\1\\Гора приколов ( PEAK ) [bKB-XsudYuw].mkv",
-        "thumbnail": "Гора приколов ( PEAK ) [bKB-XsudYuw].jpg",
-        "duration": 933.308
+        "thumbnail": "Гора приколов ( PEAK ) [bKB-XsudYuw].mkv.jpg",
+        "duration": null
     },
     {
         "id": "R_QpLiwf06k",
-        "name": "Горе грабитель ( The Professional ⧸ Pools )",
+        "name": "Горе грабитель ( The Professional ⧸ Pools ) [R_QpLiwf06k]",
         "filename": "Горе грабитель ( The Professional ⧸ Pools ) [R_QpLiwf06k].mkv",
         "path": "G:\\Media\\youtube\\1\\Горе грабитель ( The Professional ⧸ Pools ) [R_QpLiwf06k].mkv",
-        "thumbnail": "Горе грабитель ( The Professional ⧸ Pools ) [R_QpLiwf06k].jpg",
-        "duration": 723.148
+        "thumbnail": "Горе грабитель ( The Professional ⧸ Pools ) [R_QpLiwf06k].mkv.jpg",
+        "duration": null
     },
     {
         "id": "KfjFEenAPT8",
-        "name": "Докажи, что ты НЕ РОБОТ, чтобы пройти эту игру ｜ I'm Not a Robot",
+        "name": "Докажи, что ты НЕ РОБОТ, чтобы пройти эту игру ｜ I'm Not a Robot [KfjFEenAPT8]",
         "filename": "Докажи, что ты НЕ РОБОТ, чтобы пройти эту игру ｜ I'm Not a Robot [KfjFEenAPT8].mkv",
         "path": "G:\\Media\\youtube\\1\\Докажи, что ты НЕ РОБОТ, чтобы пройти эту игру ｜ I'm Not a Robot [KfjFEenAPT8].mkv",
-        "thumbnail": "Докажи, что ты НЕ РОБОТ, чтобы пройти эту игру ｜ I'm Not a Robot [KfjFEenAPT8].jpg",
-        "duration": 1786.508
+        "thumbnail": "Докажи, что ты НЕ РОБОТ, чтобы пройти эту игру ｜ I'm Not a Robot [KfjFEenAPT8].mkv.jpg",
+        "duration": null
     },
     {
         "id": "TQu4O0z2U2c",
-        "name": "Жертвы Прогрессивных Активистов, и Левой Повестки - Чарли Кирк и Ирина Заруцкая",
+        "name": "Жертвы Прогрессивных Активистов, и Левой Повестки - Чарли Кирк и Ирина Заруцкая [TQu4O0z2U2c]",
         "filename": "Жертвы Прогрессивных Активистов, и Левой Повестки - Чарли Кирк и Ирина Заруцкая [TQu4O0z2U2c].mkv",
         "path": "G:\\Media\\youtube\\1\\Жертвы Прогрессивных Активистов, и Левой Повестки - Чарли Кирк и Ирина Заруцкая [TQu4O0z2U2c].mkv",
-        "thumbnail": "Жертвы Прогрессивных Активистов, и Левой Повестки - Чарли Кирк и Ирина Заруцкая [TQu4O0z2U2c].jpg",
-        "duration": 1234.748
+        "thumbnail": "Жертвы Прогрессивных Активистов, и Левой Повестки - Чарли Кирк и Ирина Заруцкая [TQu4O0z2U2c].mkv.jpg",
+        "duration": null
     },
     {
         "id": "8XeLZb5Mosk",
-        "name": "Зачем я прошёл Plants vs. Zombies： Hard Mode без подсолнухов？",
+        "name": "Зачем я прошёл Plants vs. Zombies： Hard Mode без подсолнухов？ [8XeLZb5Mosk]",
         "filename": "Зачем я прошёл Plants vs. Zombies： Hard Mode без подсолнухов？ [8XeLZb5Mosk].mkv",
         "path": "G:\\Media\\youtube\\1\\Зачем я прошёл Plants vs. Zombies： Hard Mode без подсолнухов？ [8XeLZb5Mosk].mkv",
-        "thumbnail": "Зачем я прошёл Plants vs. Zombies： Hard Mode без подсолнухов？ [8XeLZb5Mosk].jpg",
-        "duration": 2498.328
+        "thumbnail": "Зачем я прошёл Plants vs. Zombies： Hard Mode без подсолнухов？ [8XeLZb5Mosk].mkv.jpg",
+        "duration": null
     },
     {
         "id": "LTbVFPRfioU",
-        "name": "Как меня затопили , Развалили тачку и Унизили в кофейне (Смешные истории из жизни в Саратове)",
+        "name": "Как меня затопили , Развалили тачку и Унизили в кофейне (Смешные истории из жизни в Саратове) [LTbVFPRfioU]",
         "filename": "Как меня затопили , Развалили тачку и Унизили в кофейне (Смешные истории из жизни в Саратове) [LTbVFPRfioU].mkv",
         "path": "G:\\Media\\youtube\\1\\Как меня затопили , Развалили тачку и Унизили в кофейне (Смешные истории из жизни в Саратове) [LTbVFPRfioU].mkv",
-        "thumbnail": "Как меня затопили , Развалили тачку и Унизили в кофейне (Смешные истории из жизни в Саратове) [LTbVFPRfioU].jpg",
-        "duration": 1799.248
+        "thumbnail": "Как меня затопили , Развалили тачку и Унизили в кофейне (Смешные истории из жизни в Саратове) [LTbVFPRfioU].mkv.jpg",
+        "duration": null
     },
     {
         "id": "62Ger-zS5pw",
-        "name": "Клиника Джохана и Мармока  ( Surgeon Simulator )",
+        "name": "Клиника Джохана и Мармока  ( Surgeon Simulator ) [62Ger-zS5pw]",
         "filename": "Клиника Джохана и Мармока  ( Surgeon Simulator ) [62Ger-zS5pw].mkv",
         "path": "G:\\Media\\youtube\\1\\Клиника Джохана и Мармока  ( Surgeon Simulator ) [62Ger-zS5pw].mkv",
-        "thumbnail": "Клиника Джохана и Мармока  ( Surgeon Simulator ) [62Ger-zS5pw].jpg",
-        "duration": 1026.388
+        "thumbnail": "Клиника Джохана и Мармока  ( Surgeon Simulator ) [62Ger-zS5pw].mkv.jpg",
+        "duration": null
     },
     {
         "id": "tL0dFMBqkVQ",
-        "name": "КОРОЧЕ ГОВОРЯ, КУПИЛ IPHONE 17",
+        "name": "КОРОЧЕ ГОВОРЯ, КУПИЛ IPHONE 17 [tL0dFMBqkVQ]",
         "filename": "КОРОЧЕ ГОВОРЯ, КУПИЛ IPHONE 17 [tL0dFMBqkVQ].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, КУПИЛ IPHONE 17 [tL0dFMBqkVQ].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, КУПИЛ IPHONE 17 [tL0dFMBqkVQ].jpg",
-        "duration": 276.548
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, КУПИЛ IPHONE 17 [tL0dFMBqkVQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "MczIOY_DdzQ",
-        "name": "КОРОЧЕ ГОВОРЯ, УНИЧТОЖАЮ АЙФОН 17",
+        "name": "КОРОЧЕ ГОВОРЯ, УНИЧТОЖАЮ АЙФОН 17 [MczIOY_DdzQ]",
         "filename": "КОРОЧЕ ГОВОРЯ, УНИЧТОЖАЮ АЙФОН 17 [MczIOY_DdzQ].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, УНИЧТОЖАЮ АЙФОН 17 [MczIOY_DdzQ].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, УНИЧТОЖАЮ АЙФОН 17 [MczIOY_DdzQ].jpg",
-        "duration": 274.248
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, УНИЧТОЖАЮ АЙФОН 17 [MczIOY_DdzQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "DeGAiUeBJQw",
-        "name": "КОРОЧЕ ГОВОРЯ, ШКОЛУ ОТМЕНИЛИ!",
+        "name": "КОРОЧЕ ГОВОРЯ, ШКОЛУ ОТМЕНИЛИ! [DeGAiUeBJQw]",
         "filename": "КОРОЧЕ ГОВОРЯ, ШКОЛУ ОТМЕНИЛИ! [DeGAiUeBJQw].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, ШКОЛУ ОТМЕНИЛИ! [DeGAiUeBJQw].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, ШКОЛУ ОТМЕНИЛИ! [DeGAiUeBJQw].jpg",
-        "duration": 263.028
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, ШКОЛУ ОТМЕНИЛИ! [DeGAiUeBJQw].mkv.jpg",
+        "duration": null
     },
     {
         "id": "cOF2dLwITQc",
-        "name": "КОРОЧЕ ГОВОРЯ, Я ОБОГНАЛ МИСТЕРА БИСТА",
+        "name": "КОРОЧЕ ГОВОРЯ, Я ОБОГНАЛ МИСТЕРА БИСТА [cOF2dLwITQc]",
         "filename": "КОРОЧЕ ГОВОРЯ, Я ОБОГНАЛ МИСТЕРА БИСТА [cOF2dLwITQc].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, Я ОБОГНАЛ МИСТЕРА БИСТА [cOF2dLwITQc].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ОБОГНАЛ МИСТЕРА БИСТА [cOF2dLwITQc].jpg",
-        "duration": 277.448
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ОБОГНАЛ МИСТЕРА БИСТА [cOF2dLwITQc].mkv.jpg",
+        "duration": null
     },
     {
         "id": "NlbUJu6isp4",
-        "name": "КОРОЧЕ ГОВОРЯ, Я ОПОЗДАЛ НА САМОЛЕТ",
+        "name": "КОРОЧЕ ГОВОРЯ, Я ОПОЗДАЛ НА САМОЛЕТ [NlbUJu6isp4]",
         "filename": "КОРОЧЕ ГОВОРЯ, Я ОПОЗДАЛ НА САМОЛЕТ [NlbUJu6isp4].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, Я ОПОЗДАЛ НА САМОЛЕТ [NlbUJu6isp4].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ОПОЗДАЛ НА САМОЛЕТ [NlbUJu6isp4].jpg",
-        "duration": 263.428
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ОПОЗДАЛ НА САМОЛЕТ [NlbUJu6isp4].mkv.jpg",
+        "duration": null
     },
     {
         "id": "DI2xDwGgbQQ",
-        "name": "КОРОЧЕ ГОВОРЯ, Я ОТКАЗАЛСЯ ОТ МЯСА",
+        "name": "КОРОЧЕ ГОВОРЯ, Я ОТКАЗАЛСЯ ОТ МЯСА [DI2xDwGgbQQ]",
         "filename": "КОРОЧЕ ГОВОРЯ, Я ОТКАЗАЛСЯ ОТ МЯСА [DI2xDwGgbQQ].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, Я ОТКАЗАЛСЯ ОТ МЯСА [DI2xDwGgbQQ].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ОТКАЗАЛСЯ ОТ МЯСА [DI2xDwGgbQQ].jpg",
-        "duration": 300.428
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ОТКАЗАЛСЯ ОТ МЯСА [DI2xDwGgbQQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "KquOt48LGrI",
-        "name": "КОРОЧЕ ГОВОРЯ, Я ПРОДАЮ КАНАЛ...",
+        "name": "КОРОЧЕ ГОВОРЯ, Я ПРОДАЮ КАНАЛ... [KquOt48LGrI]",
         "filename": "КОРОЧЕ ГОВОРЯ, Я ПРОДАЮ КАНАЛ... [KquOt48LGrI].mkv",
         "path": "G:\\Media\\youtube\\1\\КОРОЧЕ ГОВОРЯ, Я ПРОДАЮ КАНАЛ... [KquOt48LGrI].mkv",
-        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ПРОДАЮ КАНАЛ... [KquOt48LGrI].jpg",
-        "duration": 309.748
+        "thumbnail": "КОРОЧЕ ГОВОРЯ, Я ПРОДАЮ КАНАЛ... [KquOt48LGrI].mkv.jpg",
+        "duration": null
     },
     {
         "id": "9xMDiOS78_s",
-        "name": "Леваков МАССОВО Увольняют с Работы - за посты о Чарли Кирке",
+        "name": "Леваков МАССОВО Увольняют с Работы - за посты о Чарли Кирке [9xMDiOS78_s]",
         "filename": "Леваков МАССОВО Увольняют с Работы - за посты о Чарли Кирке [9xMDiOS78_s].mkv",
         "path": "G:\\Media\\youtube\\1\\Леваков МАССОВО Увольняют с Работы - за посты о Чарли Кирке [9xMDiOS78_s].mkv",
-        "thumbnail": "Леваков МАССОВО Увольняют с Работы - за посты о Чарли Кирке [9xMDiOS78_s].jpg",
-        "duration": 1067.588
+        "thumbnail": "Леваков МАССОВО Увольняют с Работы - за посты о Чарли Кирке [9xMDiOS78_s].mkv.jpg",
+        "duration": null
     },
     {
         "id": "9yApQCYqogE",
-        "name": "МАЖОРНЫЕ ДЕВУШКИ ｜ ТИК ТОК",
+        "name": "МАЖОРНЫЕ ДЕВУШКИ ｜ ТИК ТОК [9yApQCYqogE]",
         "filename": "МАЖОРНЫЕ ДЕВУШКИ ｜ ТИК ТОК [9yApQCYqogE].mkv",
         "path": "G:\\Media\\youtube\\1\\МАЖОРНЫЕ ДЕВУШКИ ｜ ТИК ТОК [9yApQCYqogE].mkv",
-        "thumbnail": "МАЖОРНЫЕ ДЕВУШКИ ｜ ТИК ТОК [9yApQCYqogE].jpg",
-        "duration": 668.008
+        "thumbnail": "МАЖОРНЫЕ ДЕВУШКИ ｜ ТИК ТОК [9yApQCYqogE].mkv.jpg",
+        "duration": null
     },
     {
         "id": "rLGcc9iO9-0",
-        "name": "Милиционер гигант ( Militsioner )",
+        "name": "Милиционер гигант ( Militsioner ) [rLGcc9iO9-0]",
         "filename": "Милиционер гигант ( Militsioner ) [rLGcc9iO9-0].mkv",
         "path": "G:\\Media\\youtube\\1\\Милиционер гигант ( Militsioner ) [rLGcc9iO9-0].mkv",
-        "thumbnail": "Милиционер гигант ( Militsioner ) [rLGcc9iO9-0].jpg",
-        "duration": 900.928
+        "thumbnail": "Милиционер гигант ( Militsioner ) [rLGcc9iO9-0].mkv.jpg",
+        "duration": null
     },
     {
         "id": "wlm7SN-RGrs",
-        "name": "Мне выпало ЭТО с GENESIS Кейса в CS2 ⧸ Самый Редкий Скин Коллекции GENESIS",
+        "name": "Мне выпало ЭТО с GENESIS Кейса в CS2 ⧸ Самый Редкий Скин Коллекции GENESIS [wlm7SN-RGrs]",
         "filename": "Мне выпало ЭТО с GENESIS Кейса в CS2 ⧸ Самый Редкий Скин Коллекции GENESIS [wlm7SN-RGrs].mkv",
         "path": "G:\\Media\\youtube\\1\\Мне выпало ЭТО с GENESIS Кейса в CS2 ⧸ Самый Редкий Скин Коллекции GENESIS [wlm7SN-RGrs].mkv",
-        "thumbnail": "Мне выпало ЭТО с GENESIS Кейса в CS2 ⧸ Самый Редкий Скин Коллекции GENESIS [wlm7SN-RGrs].jpg",
-        "duration": 1351.808
+        "thumbnail": "Мне выпало ЭТО с GENESIS Кейса в CS2 ⧸ Самый Редкий Скин Коллекции GENESIS [wlm7SN-RGrs].mkv.jpg",
+        "duration": null
     },
     {
         "id": "iyGgoNQA9Fo",
-        "name": "МОЖНО ЛИ ПРОЙТИ PLAGUE INC БЕЗ СИМПТОМОВ",
+        "name": "МОЖНО ЛИ ПРОЙТИ PLAGUE INC БЕЗ СИМПТОМОВ [iyGgoNQA9Fo]",
         "filename": "МОЖНО ЛИ ПРОЙТИ PLAGUE INC БЕЗ СИМПТОМОВ [iyGgoNQA9Fo].mkv",
         "path": "G:\\Media\\youtube\\1\\МОЖНО ЛИ ПРОЙТИ PLAGUE INC БЕЗ СИМПТОМОВ [iyGgoNQA9Fo].mkv",
-        "thumbnail": "МОЖНО ЛИ ПРОЙТИ PLAGUE INC БЕЗ СИМПТОМОВ [iyGgoNQA9Fo].jpg",
-        "duration": 2518.908
+        "thumbnail": "МОЖНО ЛИ ПРОЙТИ PLAGUE INC БЕЗ СИМПТОМОВ [iyGgoNQA9Fo].mkv.jpg",
+        "duration": null
     },
     {
         "id": "eR8OtwDD_2M",
-        "name": "Мы vs гора ( PEAK )",
+        "name": "Мы vs гора ( PEAK ) [eR8OtwDD_2M]",
         "filename": "Мы vs гора ( PEAK ) [eR8OtwDD_2M].mkv",
         "path": "G:\\Media\\youtube\\1\\Мы vs гора ( PEAK ) [eR8OtwDD_2M].mkv",
-        "thumbnail": "Мы vs гора ( PEAK ) [eR8OtwDD_2M].jpg",
-        "duration": 897.028
+        "thumbnail": "Мы vs гора ( PEAK ) [eR8OtwDD_2M].mkv.jpg",
+        "duration": null
     },
     {
         "id": "my0586noLyQ",
-        "name": "Найди 50 отличий на DUST 2 ( Teardown )",
+        "name": "Найди 50 отличий на DUST 2 ( Teardown ) [my0586noLyQ]",
         "filename": "Найди 50 отличий на DUST 2 ( Teardown ) [my0586noLyQ].mkv",
         "path": "G:\\Media\\youtube\\1\\Найди 50 отличий на DUST 2 ( Teardown ) [my0586noLyQ].mkv",
-        "thumbnail": "Найди 50 отличий на DUST 2 ( Teardown ) [my0586noLyQ].jpg",
-        "duration": 835.328
+        "thumbnail": "Найди 50 отличий на DUST 2 ( Teardown ) [my0586noLyQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "8pqY135SU4Y",
-        "name": "Новый GENESIS Кейс - ПРОСТО ИМБА в CS2!",
+        "name": "Новый GENESIS Кейс - ПРОСТО ИМБА в CS2! [8pqY135SU4Y]",
         "filename": "Новый GENESIS Кейс - ПРОСТО ИМБА в CS2! [8pqY135SU4Y].mkv",
         "path": "G:\\Media\\youtube\\1\\Новый GENESIS Кейс - ПРОСТО ИМБА в CS2! [8pqY135SU4Y].mkv",
-        "thumbnail": "Новый GENESIS Кейс - ПРОСТО ИМБА в CS2! [8pqY135SU4Y].jpg",
-        "duration": 1275.548
+        "thumbnail": "Новый GENESIS Кейс - ПРОСТО ИМБА в CS2! [8pqY135SU4Y].mkv.jpg",
+        "duration": null
     },
     {
         "id": "6fty5yB7bFo",
-        "name": "Он говорил c БОГОМ через компьютер. Программист шизофреник и TempleOS",
+        "name": "Он говорил c БОГОМ через компьютер. Программист шизофреник и TempleOS [6fty5yB7bFo]",
         "filename": "Он говорил c БОГОМ через компьютер. Программист шизофреник и TempleOS [6fty5yB7bFo].mkv",
         "path": "G:\\Media\\youtube\\1\\Он говорил c БОГОМ через компьютер. Программист шизофреник и TempleOS [6fty5yB7bFo].mkv",
-        "thumbnail": "Он говорил c БОГОМ через компьютер. Программист шизофреник и TempleOS [6fty5yB7bFo].jpg",
-        "duration": 1362.128
+        "thumbnail": "Он говорил c БОГОМ через компьютер. Программист шизофреник и TempleOS [6fty5yB7bFo].mkv.jpg",
+        "duration": null
     },
     {
         "id": "v46pyCMgK1o",
-        "name": "ОНИ ДЕЛАЮТ ЛЕКАРСТВО ЗА 60 СЕКУНД В PLAGUE INC",
+        "name": "ОНИ ДЕЛАЮТ ЛЕКАРСТВО ЗА 60 СЕКУНД В PLAGUE INC [v46pyCMgK1o]",
         "filename": "ОНИ ДЕЛАЮТ ЛЕКАРСТВО ЗА 60 СЕКУНД В PLAGUE INC [v46pyCMgK1o].mkv",
         "path": "G:\\Media\\youtube\\1\\ОНИ ДЕЛАЮТ ЛЕКАРСТВО ЗА 60 СЕКУНД В PLAGUE INC [v46pyCMgK1o].mkv",
-        "thumbnail": "ОНИ ДЕЛАЮТ ЛЕКАРСТВО ЗА 60 СЕКУНД В PLAGUE INC [v46pyCMgK1o].jpg",
-        "duration": 1490.288
+        "thumbnail": "ОНИ ДЕЛАЮТ ЛЕКАРСТВО ЗА 60 СЕКУНД В PLAGUE INC [v46pyCMgK1o].mkv.jpg",
+        "duration": null
     },
     {
         "id": "s3bqZPIipmA",
-        "name": "Опять 25 ( Minecraft )",
+        "name": "Опять 25 ( Minecraft ) [s3bqZPIipmA]",
         "filename": "Опять 25 ( Minecraft ) [s3bqZPIipmA].mkv",
         "path": "G:\\Media\\youtube\\1\\Опять 25 ( Minecraft ) [s3bqZPIipmA].mkv",
-        "thumbnail": "Опять 25 ( Minecraft ) [s3bqZPIipmA].jpg",
-        "duration": 745.788
+        "thumbnail": "Опять 25 ( Minecraft ) [s3bqZPIipmA].mkv.jpg",
+        "duration": null
     },
     {
         "id": "I14W--tMYUU",
-        "name": "Отключили ВСЕ магазины игроков (это было непросто)",
+        "name": "Отключили ВСЕ магазины игроков (это было непросто) [I14W--tMYUU]",
         "filename": "Отключили ВСЕ магазины игроков (это было непросто) [I14W--tMYUU].mkv",
         "path": "G:\\Media\\youtube\\1\\Отключили ВСЕ магазины игроков (это было непросто) [I14W--tMYUU].mkv",
-        "thumbnail": "Отключили ВСЕ магазины игроков (это было непросто) [I14W--tMYUU].jpg",
-        "duration": 8823.968
+        "thumbnail": "Отключили ВСЕ магазины игроков (это было непросто) [I14W--tMYUU].mkv.jpg",
+        "duration": null
     },
     {
         "id": "cpk_2-V8hBc",
-        "name": "ОЧЕНЬ ХАРДКОРНОЕ ИСПЫТАНИЕ В PLAGUE INC",
+        "name": "ОЧЕНЬ ХАРДКОРНОЕ ИСПЫТАНИЕ В PLAGUE INC [cpk_2-V8hBc]",
         "filename": "ОЧЕНЬ ХАРДКОРНОЕ ИСПЫТАНИЕ В PLAGUE INC [cpk_2-V8hBc].mkv",
         "path": "G:\\Media\\youtube\\1\\ОЧЕНЬ ХАРДКОРНОЕ ИСПЫТАНИЕ В PLAGUE INC [cpk_2-V8hBc].mkv",
-        "thumbnail": "ОЧЕНЬ ХАРДКОРНОЕ ИСПЫТАНИЕ В PLAGUE INC [cpk_2-V8hBc].jpg",
-        "duration": 2252.308
+        "thumbnail": "ОЧЕНЬ ХАРДКОРНОЕ ИСПЫТАНИЕ В PLAGUE INC [cpk_2-V8hBc].mkv.jpg",
+        "duration": null
     },
     {
         "id": "azjkzTkn5U8",
-        "name": "Под градусом ( CS 2⧸ Just another night shift )",
+        "name": "Под градусом ( CS 2⧸ Just another night shift ) [azjkzTkn5U8]",
         "filename": "Под градусом ( CS 2⧸ Just another night shift ) [azjkzTkn5U8].mkv",
         "path": "G:\\Media\\youtube\\1\\Под градусом ( CS 2⧸ Just another night shift ) [azjkzTkn5U8].mkv",
-        "thumbnail": "Под градусом ( CS 2⧸ Just another night shift ) [azjkzTkn5U8].jpg",
-        "duration": 739.808
+        "thumbnail": "Под градусом ( CS 2⧸ Just another night shift ) [azjkzTkn5U8].mkv.jpg",
+        "duration": null
     },
     {
         "id": "7kl1g_DAwzU",
-        "name": "Помогите мне ( A Difficult Game About Climbing )",
+        "name": "Помогите мне ( A Difficult Game About Climbing ) [7kl1g_DAwzU]",
         "filename": "Помогите мне ( A Difficult Game About Climbing ) [7kl1g_DAwzU].mkv",
         "path": "G:\\Media\\youtube\\1\\Помогите мне ( A Difficult Game About Climbing ) [7kl1g_DAwzU].mkv",
-        "thumbnail": "Помогите мне ( A Difficult Game About Climbing ) [7kl1g_DAwzU].jpg",
-        "duration": 1185.968
+        "thumbnail": "Помогите мне ( A Difficult Game About Climbing ) [7kl1g_DAwzU].mkv.jpg",
+        "duration": null
     },
     {
         "id": "hDLYqODY7Co",
-        "name": "Про невозможные сиды, и как я их пройти пытался в Baldi's Basics Plus",
+        "name": "Про невозможные сиды, и как я их пройти пытался в Baldi's Basics Plus [hDLYqODY7Co]",
         "filename": "Про невозможные сиды, и как я их пройти пытался в Baldi's Basics Plus [hDLYqODY7Co].mkv",
         "path": "G:\\Media\\youtube\\1\\Про невозможные сиды, и как я их пройти пытался в Baldi's Basics Plus [hDLYqODY7Co].mkv",
-        "thumbnail": "Про невозможные сиды, и как я их пройти пытался в Baldi's Basics Plus [hDLYqODY7Co].jpg",
-        "duration": 1382.268
+        "thumbnail": "Про невозможные сиды, и как я их пройти пытался в Baldi's Basics Plus [hDLYqODY7Co].mkv.jpg",
+        "duration": null
     },
     {
         "id": "abwCeekjX-8",
-        "name": "Проект Апокалипсис в Cities Skylines",
+        "name": "Проект Апокалипсис в Cities Skylines [abwCeekjX-8]",
         "filename": "Проект Апокалипсис в Cities Skylines [abwCeekjX-8].mkv",
         "path": "G:\\Media\\youtube\\1\\Проект Апокалипсис в Cities Skylines [abwCeekjX-8].mkv",
-        "thumbnail": "Проект Апокалипсис в Cities Skylines [abwCeekjX-8].jpg",
-        "duration": 1431.068
+        "thumbnail": "Проект Апокалипсис в Cities Skylines [abwCeekjX-8].mkv.jpg",
+        "duration": null
     },
     {
         "id": "bR__mtX0ajU",
-        "name": "Прохождение стартовой локации на 100% (A Difficult Game About Climbing)",
+        "name": "Прохождение стартовой локации на 100% (A Difficult Game About Climbing) [bR__mtX0ajU]",
         "filename": "Прохождение стартовой локации на 100% (A Difficult Game About Climbing) [bR__mtX0ajU].mkv",
         "path": "G:\\Media\\youtube\\1\\Прохождение стартовой локации на 100% (A Difficult Game About Climbing) [bR__mtX0ajU].mkv",
-        "thumbnail": "Прохождение стартовой локации на 100% (A Difficult Game About Climbing) [bR__mtX0ajU].jpg",
-        "duration": 1930.768
+        "thumbnail": "Прохождение стартовой локации на 100% (A Difficult Game About Climbing) [bR__mtX0ajU].mkv.jpg",
+        "duration": null
     },
     {
         "id": "rEBuwBslHP0",
-        "name": "Путь к Божеству в Civilization 6 ｜ Этап 1⧹2",
+        "name": "Путь к Божеству в Civilization 6 ｜ Этап 1⧹2 [rEBuwBslHP0]",
         "filename": "Путь к Божеству в Civilization 6 ｜ Этап 1⧹2 [rEBuwBslHP0].mkv",
         "path": "G:\\Media\\youtube\\1\\Путь к Божеству в Civilization 6 ｜ Этап 1⧹2 [rEBuwBslHP0].mkv",
-        "thumbnail": "Путь к Божеству в Civilization 6 ｜ Этап 1⧹2 [rEBuwBslHP0].jpg",
-        "duration": 2223.908
+        "thumbnail": "Путь к Божеству в Civilization 6 ｜ Этап 1⧹2 [rEBuwBslHP0].mkv.jpg",
+        "duration": null
     },
     {
         "id": "XomLEVakFwY",
-        "name": "Путь к Божеству в Civilization 6 ｜ Этап 2⧹2",
+        "name": "Путь к Божеству в Civilization 6 ｜ Этап 2⧹2 [XomLEVakFwY]",
         "filename": "Путь к Божеству в Civilization 6 ｜ Этап 2⧹2 [XomLEVakFwY].mkv",
         "path": "G:\\Media\\youtube\\1\\Путь к Божеству в Civilization 6 ｜ Этап 2⧹2 [XomLEVakFwY].mkv",
-        "thumbnail": "Путь к Божеству в Civilization 6 ｜ Этап 2⧹2 [XomLEVakFwY].jpg",
-        "duration": 2498.368
+        "thumbnail": "Путь к Божеству в Civilization 6 ｜ Этап 2⧹2 [XomLEVakFwY].mkv.jpg",
+        "duration": null
     },
     {
         "id": "XijdYYhXfKE",
-        "name": "Сильвер Катка Возвращается в CS2 ⧸ PUBG",
+        "name": "Сильвер Катка Возвращается в CS2 ⧸ PUBG [XijdYYhXfKE]",
         "filename": "Сильвер Катка Возвращается в CS2 ⧸ PUBG [XijdYYhXfKE].mkv",
         "path": "G:\\Media\\youtube\\1\\Сильвер Катка Возвращается в CS2 ⧸ PUBG [XijdYYhXfKE].mkv",
-        "thumbnail": "Сильвер Катка Возвращается в CS2 ⧸ PUBG [XijdYYhXfKE].jpg",
-        "duration": 1308.408
+        "thumbnail": "Сильвер Катка Возвращается в CS2 ⧸ PUBG [XijdYYhXfKE].mkv.jpg",
+        "duration": null
     },
     {
         "id": "Hu4D0_fZ8Zw",
-        "name": "Сложность - невозможно (Без гейзеров, High Temp) ► Oxygen not included ► Bionic pack",
+        "name": "Сложность - невозможно (Без гейзеров, High Temp) ► Oxygen not included ► Bionic pack [Hu4D0_fZ8Zw]",
         "filename": "Сложность - невозможно (Без гейзеров, High Temp) ► Oxygen not included ► Bionic pack [Hu4D0_fZ8Zw].mkv",
         "path": "G:\\Media\\youtube\\1\\Сложность - невозможно (Без гейзеров, High Temp) ► Oxygen not included ► Bionic pack [Hu4D0_fZ8Zw].mkv",
-        "thumbnail": "Сложность - невозможно (Без гейзеров, High Temp) ► Oxygen not included ► Bionic pack [Hu4D0_fZ8Zw].jpg",
-        "duration": 5693.228
+        "thumbnail": "Сложность - невозможно (Без гейзеров, High Temp) ► Oxygen not included ► Bionic pack [Hu4D0_fZ8Zw].mkv.jpg",
+        "duration": null
     },
     {
         "id": "HUb_DIbOIPs",
-        "name": "Страдания и боль ( Only up в доспехах )",
+        "name": "Страдания и боль ( Only up в доспехах ) [HUb_DIbOIPs]",
         "filename": "Страдания и боль ( Only up в доспехах ) [HUb_DIbOIPs].mkv",
         "path": "G:\\Media\\youtube\\1\\Страдания и боль ( Only up в доспехах ) [HUb_DIbOIPs].mkv",
-        "thumbnail": "Страдания и боль ( Only up в доспехах ) [HUb_DIbOIPs].jpg",
-        "duration": 1273.648
+        "thumbnail": "Страдания и боль ( Only up в доспехах ) [HUb_DIbOIPs].mkv.jpg",
+        "duration": null
     },
     {
         "id": "LGkD4MnilS0",
-        "name": "Террария БЕЗ Мобов",
+        "name": "Террария БЕЗ Мобов [LGkD4MnilS0]",
         "filename": "Террария БЕЗ Мобов [LGkD4MnilS0].mkv",
         "path": "G:\\Media\\youtube\\1\\Террария БЕЗ Мобов [LGkD4MnilS0].mkv",
-        "thumbnail": "Террария БЕЗ Мобов [LGkD4MnilS0].jpg",
-        "duration": 1233.488
+        "thumbnail": "Террария БЕЗ Мобов [LGkD4MnilS0].mkv.jpg",
+        "duration": null
     },
     {
         "id": "AW26iOPcNX0",
-        "name": "ТЕРРАРИЯ В ПУСТОМ МИРЕ 1⧸2",
+        "name": "ТЕРРАРИЯ В ПУСТОМ МИРЕ 1⧸2 [AW26iOPcNX0]",
         "filename": "ТЕРРАРИЯ В ПУСТОМ МИРЕ 1⧸2 [AW26iOPcNX0].mkv",
         "path": "G:\\Media\\youtube\\1\\ТЕРРАРИЯ В ПУСТОМ МИРЕ 1⧸2 [AW26iOPcNX0].mkv",
-        "thumbnail": "ТЕРРАРИЯ В ПУСТОМ МИРЕ 1⧸2 [AW26iOPcNX0].jpg",
-        "duration": 876.488
+        "thumbnail": "ТЕРРАРИЯ В ПУСТОМ МИРЕ 1⧸2 [AW26iOPcNX0].mkv.jpg",
+        "duration": null
     },
     {
         "id": "KlG2fS_X2FA",
-        "name": "Террария в ПУСТОМ мире 2⧸2",
+        "name": "Террария в ПУСТОМ мире 2⧸2 [KlG2fS_X2FA]",
         "filename": "Террария в ПУСТОМ мире 2⧸2 [KlG2fS_X2FA].mkv",
         "path": "G:\\Media\\youtube\\1\\Террария в ПУСТОМ мире 2⧸2 [KlG2fS_X2FA].mkv",
-        "thumbnail": "Террария в ПУСТОМ мире 2⧸2 [KlG2fS_X2FA].jpg",
-        "duration": 964.908
+        "thumbnail": "Террария в ПУСТОМ мире 2⧸2 [KlG2fS_X2FA].mkv.jpg",
+        "duration": null
     },
     {
         "id": "Полное прохождение террарии",
-        "name": "Террария, но каждый день МИР ИЗ СЛУЧАЙНОГО БЛОКА!  • terraria",
+        "name": "Террария, но каждый день МИР ИЗ СЛУЧАЙНОГО БЛОКА! [Полное прохождение террарии] • terraria [wImRL6tDHd8]",
         "filename": "Террария, но каждый день МИР ИЗ СЛУЧАЙНОГО БЛОКА! [Полное прохождение террарии] • terraria [wImRL6tDHd8].mkv",
         "path": "G:\\Media\\youtube\\1\\Террария, но каждый день МИР ИЗ СЛУЧАЙНОГО БЛОКА! [Полное прохождение террарии] • terraria [wImRL6tDHd8].mkv",
-        "thumbnail": "Террария, но каждый день МИР ИЗ СЛУЧАЙНОГО БЛОКА! [Полное прохождение террарии] • terraria [wImRL6tDHd8].jpg",
-        "duration": 4882.868
+        "thumbnail": "Террария, но каждый день МИР ИЗ СЛУЧАЙНОГО БЛОКА! [Полное прохождение террарии] • terraria [wImRL6tDHd8].mkv.jpg",
+        "duration": null
     },
     {
         "id": "aTG955sipDQ",
-        "name": "Ты не продержишься 30 раундов ( Bodycam zombie )",
+        "name": "Ты не продержишься 30 раундов ( Bodycam zombie ) [aTG955sipDQ]",
         "filename": "Ты не продержишься 30 раундов ( Bodycam zombie ) [aTG955sipDQ].mkv",
         "path": "G:\\Media\\youtube\\1\\Ты не продержишься 30 раундов ( Bodycam zombie ) [aTG955sipDQ].mkv",
-        "thumbnail": "Ты не продержишься 30 раундов ( Bodycam zombie ) [aTG955sipDQ].jpg",
-        "duration": 841.808
+        "thumbnail": "Ты не продержишься 30 раундов ( Bodycam zombie ) [aTG955sipDQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "9r6TLylo_O4",
-        "name": "ТЫСЯЧА МЕЛКИХ ЖНЕЦОВ В НАЧАЛЕ ИГРЫ SUBNAUTICA",
+        "name": "ТЫСЯЧА МЕЛКИХ ЖНЕЦОВ В НАЧАЛЕ ИГРЫ SUBNAUTICA [9r6TLylo_O4]",
         "filename": "ТЫСЯЧА МЕЛКИХ ЖНЕЦОВ В НАЧАЛЕ ИГРЫ SUBNAUTICA [9r6TLylo_O4].mkv",
         "path": "G:\\Media\\youtube\\1\\ТЫСЯЧА МЕЛКИХ ЖНЕЦОВ В НАЧАЛЕ ИГРЫ SUBNAUTICA [9r6TLylo_O4].mkv",
-        "thumbnail": "ТЫСЯЧА МЕЛКИХ ЖНЕЦОВ В НАЧАЛЕ ИГРЫ SUBNAUTICA [9r6TLylo_O4].jpg",
-        "duration": 3043.148
+        "thumbnail": "ТЫСЯЧА МЕЛКИХ ЖНЕЦОВ В НАЧАЛЕ ИГРЫ SUBNAUTICA [9r6TLylo_O4].mkv.jpg",
+        "duration": null
     },
     {
         "id": "_rQPyoC_83Q",
-        "name": "Уровень сложности： НЕВОЗМОЖНО ( A Difficult Game About Climbing 2 )",
+        "name": "Уровень сложности： НЕВОЗМОЖНО ( A Difficult Game About Climbing 2 ) [_rQPyoC_83Q]",
         "filename": "Уровень сложности： НЕВОЗМОЖНО ( A Difficult Game About Climbing 2 ) [_rQPyoC_83Q].mkv",
         "path": "G:\\Media\\youtube\\1\\Уровень сложности： НЕВОЗМОЖНО ( A Difficult Game About Climbing 2 ) [_rQPyoC_83Q].mkv",
-        "thumbnail": "Уровень сложности： НЕВОЗМОЖНО ( A Difficult Game About Climbing 2 ) [_rQPyoC_83Q].jpg",
-        "duration": 2354.968
+        "thumbnail": "Уровень сложности： НЕВОЗМОЖНО ( A Difficult Game About Climbing 2 ) [_rQPyoC_83Q].mkv.jpg",
+        "duration": null
     },
     {
         "id": "yOe_Cwiw0bs",
-        "name": "Худший Диктатор в Tropico 6",
+        "name": "Худший Диктатор в Tropico 6 [yOe_Cwiw0bs]",
         "filename": "Худший Диктатор в Tropico 6 [yOe_Cwiw0bs].mkv",
         "path": "G:\\Media\\youtube\\1\\Худший Диктатор в Tropico 6 [yOe_Cwiw0bs].mkv",
-        "thumbnail": "Худший Диктатор в Tropico 6 [yOe_Cwiw0bs].jpg",
-        "duration": 1973.188
+        "thumbnail": "Худший Диктатор в Tropico 6 [yOe_Cwiw0bs].mkv.jpg",
+        "duration": null
     },
     {
         "id": "PKcAMiw_3GI",
-        "name": "Читаю ПЕРВОНАЧАЛЬНЫЙ сценарий Последней Кнопки 2",
+        "name": "Читаю ПЕРВОНАЧАЛЬНЫЙ сценарий Последней Кнопки 2 [PKcAMiw_3GI]",
         "filename": "Читаю ПЕРВОНАЧАЛЬНЫЙ сценарий Последней Кнопки 2 [PKcAMiw_3GI].mkv",
         "path": "G:\\Media\\youtube\\1\\Читаю ПЕРВОНАЧАЛЬНЫЙ сценарий Последней Кнопки 2 [PKcAMiw_3GI].mkv",
-        "thumbnail": "Читаю ПЕРВОНАЧАЛЬНЫЙ сценарий Последней Кнопки 2 [PKcAMiw_3GI].jpg",
-        "duration": 1751.988
+        "thumbnail": "Читаю ПЕРВОНАЧАЛЬНЫЙ сценарий Последней Кнопки 2 [PKcAMiw_3GI].mkv.jpg",
+        "duration": null
     },
     {
         "id": "cVt1c6h3KyU",
-        "name": "Что лишнее 2 ( Teardown )",
+        "name": "Что лишнее 2 ( Teardown ) [cVt1c6h3KyU]",
         "filename": "Что лишнее 2 ( Teardown ) [cVt1c6h3KyU].mkv",
         "path": "G:\\Media\\youtube\\1\\Что лишнее 2 ( Teardown ) [cVt1c6h3KyU].mkv",
-        "thumbnail": "Что лишнее 2 ( Teardown ) [cVt1c6h3KyU].jpg",
-        "duration": 817.788
+        "thumbnail": "Что лишнее 2 ( Teardown ) [cVt1c6h3KyU].mkv.jpg",
+        "duration": null
     },
     {
         "id": "ehEzTSJHD4E",
-        "name": "Что, если.. Mini base ► Oxygen not included ► Spaced Out",
+        "name": "Что, если.. Mini base ► Oxygen not included ► Spaced Out [ehEzTSJHD4E]",
         "filename": "Что, если.. Mini base ► Oxygen not included ► Spaced Out [ehEzTSJHD4E].mkv",
         "path": "G:\\Media\\youtube\\1\\Что, если.. Mini base ► Oxygen not included ► Spaced Out [ehEzTSJHD4E].mkv",
-        "thumbnail": "Что, если.. Mini base ► Oxygen not included ► Spaced Out [ehEzTSJHD4E].jpg",
-        "duration": 5561.548
+        "thumbnail": "Что, если.. Mini base ► Oxygen not included ► Spaced Out [ehEzTSJHD4E].mkv.jpg",
+        "duration": null
     },
     {
         "id": "sdqg8Xlqet8",
-        "name": "Что, если.. Скайблок без гейзеров？ Empty World ► Oxygen Not Included ► Spaced Out",
+        "name": "Что, если.. Скайблок без гейзеров？ Empty World ► Oxygen Not Included ► Spaced Out [sdqg8Xlqet8]",
         "filename": "Что, если.. Скайблок без гейзеров？ Empty World ► Oxygen Not Included ► Spaced Out [sdqg8Xlqet8].mkv",
         "path": "G:\\Media\\youtube\\1\\Что, если.. Скайблок без гейзеров？ Empty World ► Oxygen Not Included ► Spaced Out [sdqg8Xlqet8].mkv",
-        "thumbnail": "Что, если.. Скайблок без гейзеров？ Empty World ► Oxygen Not Included ► Spaced Out [sdqg8Xlqet8].jpg",
-        "duration": 5503.008
+        "thumbnail": "Что, если.. Скайблок без гейзеров？ Empty World ► Oxygen Not Included ► Spaced Out [sdqg8Xlqet8].mkv.jpg",
+        "duration": null
     },
     {
         "id": "G9gSnTNMY1U",
-        "name": "Что, если.. узкий мир 9 блоков 600% ► 25 часов полное прохождение ► Factorio",
+        "name": "Что, если.. узкий мир 9 блоков 600% ► 25 часов полное прохождение ► Factorio [G9gSnTNMY1U]",
         "filename": "Что, если.. узкий мир 9 блоков 600% ► 25 часов полное прохождение ► Factorio [G9gSnTNMY1U].mkv",
         "path": "G:\\Media\\youtube\\1\\Что, если.. узкий мир 9 блоков 600% ► 25 часов полное прохождение ► Factorio [G9gSnTNMY1U].mkv",
-        "thumbnail": "Что, если.. узкий мир 9 блоков 600% ► 25 часов полное прохождение ► Factorio [G9gSnTNMY1U].jpg",
-        "duration": 6623.648
+        "thumbnail": "Что, если.. узкий мир 9 блоков 600% ► 25 часов полное прохождение ► Factorio [G9gSnTNMY1U].mkv.jpg",
+        "duration": null
     },
     {
         "id": "efS5aLUyJxs",
-        "name": "Шипы, огонь и зайцы ( Super bunny man )",
+        "name": "Шипы, огонь и зайцы ( Super bunny man ) [efS5aLUyJxs]",
         "filename": "Шипы, огонь и зайцы ( Super bunny man ) [efS5aLUyJxs].mkv",
         "path": "G:\\Media\\youtube\\1\\Шипы, огонь и зайцы ( Super bunny man ) [efS5aLUyJxs].mkv",
-        "thumbnail": "Шипы, огонь и зайцы ( Super bunny man ) [efS5aLUyJxs].jpg",
-        "duration": 920.508
+        "thumbnail": "Шипы, огонь и зайцы ( Super bunny man ) [efS5aLUyJxs].mkv.jpg",
+        "duration": null
     },
     {
         "id": "gYe4-2Y8nBc",
-        "name": "ЭПОХА ПЕРЕПОТРЕБЛЕНИЯ — самое бедное поколение",
+        "name": "ЭПОХА ПЕРЕПОТРЕБЛЕНИЯ — самое бедное поколение [gYe4-2Y8nBc]",
         "filename": "ЭПОХА ПЕРЕПОТРЕБЛЕНИЯ — самое бедное поколение [gYe4-2Y8nBc].mkv",
         "path": "G:\\Media\\youtube\\1\\ЭПОХА ПЕРЕПОТРЕБЛЕНИЯ — самое бедное поколение [gYe4-2Y8nBc].mkv",
-        "thumbnail": "ЭПОХА ПЕРЕПОТРЕБЛЕНИЯ — самое бедное поколение [gYe4-2Y8nBc].jpg",
-        "duration": 950.728
+        "thumbnail": "ЭПОХА ПЕРЕПОТРЕБЛЕНИЯ — самое бедное поколение [gYe4-2Y8nBc].mkv.jpg",
+        "duration": null
     },
     {
         "id": "OvX5rt0ewKQ",
-        "name": "Я Попробовал Все Страхи Человечества",
+        "name": "Я Попробовал Все Страхи Человечества [OvX5rt0ewKQ]",
         "filename": "Я Попробовал Все Страхи Человечества [OvX5rt0ewKQ].mkv",
         "path": "G:\\Media\\youtube\\1\\Я Попробовал Все Страхи Человечества [OvX5rt0ewKQ].mkv",
-        "thumbnail": "Я Попробовал Все Страхи Человечества [OvX5rt0ewKQ].jpg",
-        "duration": 671.428
+        "thumbnail": "Я Попробовал Все Страхи Человечества [OvX5rt0ewKQ].mkv.jpg",
+        "duration": null
     },
     {
         "id": "s00u2UqYOKw",
-        "name": "Я Прошел Самый Сложный Мод На Subnautica",
+        "name": "Я Прошел Самый Сложный Мод На Subnautica [s00u2UqYOKw]",
         "filename": "Я Прошел Самый Сложный Мод На Subnautica [s00u2UqYOKw].mkv",
         "path": "G:\\Media\\youtube\\1\\Я Прошел Самый Сложный Мод На Subnautica [s00u2UqYOKw].mkv",
-        "thumbnail": "Я Прошел Самый Сложный Мод На Subnautica [s00u2UqYOKw].jpg",
-        "duration": 2646.208
+        "thumbnail": "Я Прошел Самый Сложный Мод На Subnautica [s00u2UqYOKw].mkv.jpg",
+        "duration": null
     }
 ]
