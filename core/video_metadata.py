@@ -1,9 +1,9 @@
-# thumbnail_generator.py
+# video_metadata.py
 import os
 import ffmpeg
 
-import core.file_manager as file_manager
 from core.data import Videos, Config
+import core.utils as utils
 
 
 def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
@@ -15,7 +15,9 @@ def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
     if video_state["thumbnail"]:
         return (video_state["thumbnail"], False)
 
-    thumbnail = _generate_thumbnail(video_state)
+    thumbnail_path = _generate_thumbnail(video_state)
+    thumbnail = os.path.basename(thumbnail_path)
+
     video_state["thumbnail"] = thumbnail
     Videos.update_video(video_state)
 
@@ -25,7 +27,7 @@ def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
 
 def _generate_thumbnail(video_state):
 
-    duration = file_manager.fetch_duration(video_state["id"])[0]
+    duration = fetch_duration(video_state["id"])[0]
 
     percent = Config.get_setting("thumbnail_percent")
 
@@ -55,3 +57,31 @@ def _calculate_percentile_time(time, percent):
     seconds = int(time_seconds % 60)
     
     return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
+
+
+# ==================== Duration ====================
+def _get_video_duration(video_state: dict) -> float:
+    print("generate duration for:", video_state["id"])
+
+    probe = ffmpeg.probe(video_state["path"])
+    duration = float(probe['format']['duration'])
+
+    return duration
+
+
+def fetch_duration(video_id) -> tuple[str | None, bool]:
+    video_state = Videos.get_video(video_id)
+
+    if not video_state:
+        return None, False
+
+    if video_state["duration"]:
+        return (video_state["duration"], False)
+
+    duration = _get_video_duration(video_state)
+    duration_str = utils.formate_time(duration)
+
+    video_state["duration"] = duration_str
+    Videos.update_video(video_state)
+
+    return (duration_str, True)

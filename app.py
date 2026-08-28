@@ -1,23 +1,20 @@
-from flask import Flask, render_template, send_file, send_from_directory, jsonify, url_for, request
+from flask import Flask, render_template, send_file, jsonify, url_for, request
 import os
 
-from core.data import Videos
+from core.data import Videos, Config
 import core.file_manager as file_manager
-import core.thumbnail_generator as thumbnail_generator
+import core.video_metadata as video_metadata
 import core.utils as utils
 
 
 app = Flask(__name__)
 
 
-@app.route('/favicon.ico')
-def favicon():
-    return send_from_directory('static', 'favicon.ico')
-
-
 @app.route('/')
 def index():
-    videos = Videos.get_all()
+    Videos.reset_counter()
+    init_videos_count = Config.get_setting("init_videos_count")
+    videos = Videos.get_videos(init_videos_count) or []
     return render_template('index.html', videos=videos)
 
 
@@ -39,40 +36,51 @@ def settings():
     return render_template('settings.html')
 
 
-# ==================== POSTs ====================
-@app.route('/fetch-thumbnail-ajax', methods=['POST'])
-def fetch_thumbnail_ajax():
-    data = request.get_json()
-    video_id = data['video_id']
-
-    thumbnail_abs, was_generated = thumbnail_generator.fetch_thumbnail(video_id)
+# ==================== API ====================
+@app.route('/api/videos/<video_id>/thumbnail')
+def fetch_thumbnail_ajax(video_id):
+    thumbnail, was_generated = video_metadata.fetch_thumbnail(video_id)
     
-    if not thumbnail_abs:
-        return jsonify({'status': 'error', 'message': 'Thumbnail generation failed'}), 404
+    if thumbnail is None:
+        return jsonify({'ok': False, 'error': 'Thumbnail generation failed'}), 404
 
-    thumbnail_url = url_for('static', filename="thumbnails/" + os.path.basename(thumbnail_abs))
+    thumbnail_url = url_for('static', filename="thumbnails/" + thumbnail)
 
     return jsonify({
-        'status': 'success',
-        'thumbnail_path': thumbnail_url,
-        'generated': was_generated  # True - создано сейчас, False - уже существовало
+        'ok': True,
+        "data": {
+            'thumbnail_path': thumbnail_url,
+            'generated': was_generated  # True - создано сейчас, False - уже существовало
+        }
     })
 
 
-@app.route('/fetch-duration-ajax', methods=['POST'])
-def fetch_duration_ajax():
-    data = request.get_json()
-    video_id = data['video_id']
-
-    duration, was_generated = file_manager.fetch_duration(video_id)
+@app.route('/api/videos/<video_id>/duration')
+def fetch_duration_ajax(video_id):
+    duration, was_generated = video_metadata.fetch_duration(video_id)
     
-    if not duration:
-        return jsonify({'status': 'error', 'message': 'Duration fetching failed'}), 404
+    if duration is None:
+        return jsonify({'ok': False, 'error': 'Duration fetching failed'}), 404
     
     return jsonify({
-        'status': 'success',
-        'duration': utils.formate_time(duration),
-        'generated': was_generated  # True - создано сейчас, False - уже существовало
+        'ok': True,
+        "data": {
+            'duration': duration,
+            'generated': was_generated  # True - создано сейчас, False - уже существовало
+        }
+    })
+
+
+@app.route('/api/videos')
+def get_videos():
+    videos_per_scroll = Config.get_setting("videos_per_scroll")
+    videos = Videos.get_videos(videos_per_scroll)
+
+    return jsonify({
+        "ok": True,
+        "data": {
+            "videos": videos
+        }
     })
 
 
