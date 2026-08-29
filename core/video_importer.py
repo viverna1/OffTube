@@ -1,17 +1,16 @@
-# file_manager.py
+# video_importer.py
 import os
 import re
 
-from core.data import Videos, Config
+from core.data.config_storage import Config
 import core.utils as utils
 
 
 VIDEO_ID_PATTERN = r'\[(.*?)\]'
 
 
-def generate_all_videos():
+def import_all_videos():
     videos = _scan_videos()
-    Videos.set_data(videos)
     return videos
 
 

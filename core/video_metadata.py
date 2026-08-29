@@ -2,12 +2,15 @@
 import os
 import ffmpeg
 
-from core.data import Videos, Config
+from core.data.videos_storage import Videos
+from core.data.config_storage import Config
 import core.utils as utils
 
 
 def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
     video_state = Videos.get_video(video_id)
+
+    print(video_id)
 
     if not video_state:
         return None, False
@@ -26,7 +29,6 @@ def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
 
 
 def _generate_thumbnail(video_state):
-
     duration = fetch_duration(video_state["id"])[0]
 
     percent = Config.get_setting("thumbnail_percent")

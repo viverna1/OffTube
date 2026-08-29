@@ -6,7 +6,7 @@ def formate_time(time: float):
     seconds = int(time % 60)
 
     if hours > 0:
-        return f"{hours:2d}:{minutes:02d}:{seconds:02d}"
+        return f"{hours}:{minutes:02d}:{seconds:02d}"
     else:
         return f"{minutes:2d}:{seconds:02d}"
 

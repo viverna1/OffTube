@@ -1,10 +1,8 @@
-from flask import Flask, render_template, send_file, jsonify, url_for, request
-import os
+from flask import Flask, render_template, send_file, jsonify, url_for
 
-from core.data import Videos, Config
-import core.file_manager as file_manager
+from core.data.videos_storage import Videos
+from core.data.config_storage import Config
 import core.video_metadata as video_metadata
-import core.utils as utils
 
 
 app = Flask(__name__)
@@ -12,9 +10,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    Videos.reset_counter()
     init_videos_count = Config.get_setting("init_videos_count")
-    videos = Videos.get_videos(init_videos_count) or []
+    videos = Videos.get_videos(0, init_videos_count)
     return render_template('index.html', videos=videos)
 
 
@@ -70,11 +67,14 @@ def fetch_duration_ajax(video_id):
         }
     })
 
-
+last_index = 10
 @app.route('/api/videos')
-def get_videos():
+def get_videos(): 
+    global last_index
     videos_per_scroll = Config.get_setting("videos_per_scroll")
-    videos = Videos.get_videos(videos_per_scroll)
+    videos = Videos.get_videos(last_index, videos_per_scroll)
+
+    last_index += videos_per_scroll
 
     return jsonify({
         "ok": True,
@@ -85,5 +85,4 @@ def get_videos():
 
 
 if __name__ == '__main__':
-    file_manager.generate_all_videos()
     app.run(debug=True)
