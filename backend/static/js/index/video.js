@@ -1,4 +1,6 @@
 import { api } from "../api.js";
+import { format_duration } from "../utils.js";
+
 
 async function fetch_thumbnail(el) {
     const placeholder = el.querySelector('.video-thumbnail-placeholder');
@@ -41,7 +43,7 @@ async function fetch_duration(el) {
 
         const duration = document.createElement('div');
         duration.className = 'duration';
-        duration.textContent = data.duration;
+        duration.textContent = format_duration(data.duration);
 
         if (data.generated) {
             setTimeout(() => {

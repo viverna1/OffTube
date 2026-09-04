@@ -2,7 +2,7 @@
 import os
 import re
 
-from app.data.config_storage import Config
+from app.data import Config, Videos
 import app.utils as utils
 
 
@@ -11,6 +11,10 @@ VIDEO_ID_PATTERN = r'\[(.*?)\]'
 
 def import_all_videos():
     videos = _scan_videos()
+
+    for video in videos:
+        Videos.add_video(video)
+
     return videos
 
 

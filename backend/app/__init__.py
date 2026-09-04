@@ -1,5 +1,7 @@
 from flask import Flask
 
+from app.services.video_importer import import_all_videos
+
 
 def create_app():
     app = Flask(
@@ -7,6 +9,8 @@ def create_app():
         template_folder="../templates",
         static_folder="../static"
     )
+
+    import_all_videos()
 
     from app.routes import register_routes
     register_routes(app)

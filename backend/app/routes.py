@@ -1,7 +1,7 @@
+# routes.py
 from flask import render_template, send_file
 
-from app.data.videos_storage import Videos
-from app.data.config_storage import Config
+from app.data import Config, Videos
 
 
 def register_routes(app):

@@ -1,18 +1,13 @@
-# videos_data.py
+# videos_storage.py
 from .base_storage import Storage
-import app.services.video_importer as video_importer
+import logging
+
+log = logging.getLogger(__name__)
 
 VIDEOS_PATH = 'data/videos.json'
 
 
 class VideoStorage(Storage):
-    def __init__(self, filepath):
-        super().__init__(filepath)
-        self._data = video_importer.import_all_videos()
-
-    def _init_empty(self):
-        self._data = []
-
     def get_videos(self, offset: int, limit: int):
         if offset >= len(self._data):
             return []
@@ -20,6 +15,7 @@ class VideoStorage(Storage):
         end_index = offset + limit
         result = self._data[offset:end_index]
 
+        log.debug(f"getting videos with offset={offset}, limit={limit}. Returning {len(result)} videos.")
         return result
     
     def get_video(self, video_id):
@@ -37,6 +33,13 @@ class VideoStorage(Storage):
             if video['id'] == video_state['id']:
                 self._data[i] = video_state
                 break
+        self.save()
+
+    def add_video(self, video_state):
+        if self.get_video(video_state['id']) is not None:
+            return
+        self._data.append(video_state)
+        self.save()
 
 
 Videos = VideoStorage(VIDEOS_PATH)

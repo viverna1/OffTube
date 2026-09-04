@@ -4,10 +4,11 @@ import { create_video_el, init_video } from "./video.js";
 
 let loading_videos = false;
 let has_more_videos = true;
-let current_offset = 0;
 
 const config = await get_config();
+let current_offset = config.init_videos_count || 0;
 const VIDEOS_PER_LOAD = config.videos_per_load || 10;
+
 
 const videos_container = document.getElementById("videos");
 

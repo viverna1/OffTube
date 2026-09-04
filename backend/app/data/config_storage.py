@@ -5,11 +5,11 @@ CONFIG_PATH = 'data/config.json'
 
 
 class ConfigStorage(Storage):
-    def _init_empty(self):
-        self._data = {}
+    def get_all(self):
+        return self._data[0]
 
     def get_setting(self, key):
-        return self._data[key]
+        return self._data[0].get(key)
 
 
 Config = ConfigStorage(CONFIG_PATH)

@@ -1,9 +1,11 @@
 # video_metadata.py
 import os
 import ffmpeg
+import logging
 
-from app.data.videos_storage import Videos
-from app.data.config_storage import Config
+from app.data import Config, Videos
+
+log = logging.getLogger(__name__)
 
 
 def _generate_metadata(video_id, field, generator_func):
@@ -28,7 +30,7 @@ def _generate_thumbnail(video_state):
     output_path = Config.get_setting("thumbnails_path")
     output_path = os.path.join(output_path, video_state["filename"] + '.jpg')
     
-    print("generate thumbnail for:", video_state["id"])
+    log.debug("generate thumbnail for: %s", video_state["id"])
 
     # Извлекаем кадр
     (
@@ -46,6 +48,7 @@ def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
 
     if not video_state:
         return None, False
+
 
     if video_state["thumbnail"]:
         return (video_state["thumbnail"], False)
@@ -71,7 +74,7 @@ def _calculate_percentile_time(time, percent):
 
 # ==================== Duration ====================
 def _get_video_duration(video_state: dict) -> float:
-    print("generate duration for:", video_state["id"])
+    log.debug("generate duration for: %s", video_state["id"])
 
     probe = ffmpeg.probe(video_state["path"])
     duration = float(probe['format']['duration'])

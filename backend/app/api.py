@@ -1,7 +1,6 @@
 from flask import jsonify, url_for, request
 
-from app.data.videos_storage import Videos
-from app.data.config_storage import Config
+from app.data import Config, Videos
 import app.services.video_metadata as video_metadata
 import app.utils as utils
 
@@ -44,7 +43,7 @@ def register_api_routes(app):
         return jsonify({
             'ok': True,
             'data': {
-                'duration': utils.formate_time(duration),
+                'duration': duration,
                 'generated': was_generated
             }
         })
@@ -52,17 +51,8 @@ def register_api_routes(app):
 
     @app.route('/api/videos')
     def api_get_videos():
-        offset = request.args.get(
-            'offset',
-            default=0,
-            type=int
-        )
-
-        limit = request.args.get(
-            'limit',
-            default=10,
-            type=int
-        )
+        offset = request.args.get('offset', default=0, type=int)
+        limit = request.args.get('limit', default=10, type=int)
 
         videos = _get_videos(offset, limit)
 
