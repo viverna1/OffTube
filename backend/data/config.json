@@ -1,7 +1,7 @@
 {
-    "thumbnails_path": "G:\\Git\\Dev\\OffTube\\static\\thumbnails",
+    "thumbnails_path": "G:\\Git\\Dev\\OffTube\\backend\\static\\thumbnails",
     "video_directories": [
-        "G:\\Git\\Dev\\OffTube\\static\\vids",
+        "G:\\Git\\Dev\\OffTube\\backend\\static\\vids",
         "G:\\Media\\youtube\\1",
         "G:\\Media\\youtube\\3"
     ],
@@ -11,6 +11,6 @@
     "videos_cache": "static/videos.json",
     "video_extensions": [".mp4", ".mkv", ".avi"],
     "thumbnail_percent": 30,
-    "init_videos_count": 10,
-    "videos_per_scroll": 10
+    "init_videos_count": 40,
+    "videos_per_load": 10
 }

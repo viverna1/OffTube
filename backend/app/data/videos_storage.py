@@ -1,6 +1,6 @@
 # videos_data.py
 from .base_storage import Storage
-import core.video_importer as video_importer
+import app.services.video_importer as video_importer
 
 VIDEOS_PATH = 'data/videos.json'
 
@@ -13,12 +13,12 @@ class VideoStorage(Storage):
     def _init_empty(self):
         self._data = []
 
-    def get_videos(self, start_index: int, count: int):
-        if start_index >= len(self._data):
+    def get_videos(self, offset: int, limit: int):
+        if offset >= len(self._data):
             return []
         
-        end_index = start_index + count
-        result = self._data[start_index:end_index]
+        end_index = offset + limit
+        result = self._data[offset:end_index]
 
         return result
     

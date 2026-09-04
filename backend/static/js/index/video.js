@@ -1,29 +1,4 @@
-async function api(path, options = {}) {
-    const response = await fetch(`/api/${path}`, options);
-
-    let data;
-
-    try {
-        data = await response.json();
-    } catch {
-        throw new Error(
-            response.ok
-                ? 'Сервер вернул некорректный JSON'
-                : `HTTP ${response.status}: ${response.statusText}`
-        );
-    }
-
-    if (!response.ok) {
-        throw new Error(data.error || `HTTP ${response.status}`);
-    }
-
-    if (!data.ok) {
-        throw new Error(data.error || 'Неизвестная ошибка API');
-    }
-
-    return data.data;
-}
-
+import { api } from "../api.js";
 
 async function fetch_thumbnail(el) {
     const placeholder = el.querySelector('.video-thumbnail-placeholder');
@@ -33,7 +8,7 @@ async function fetch_thumbnail(el) {
     const videoId = el.getAttribute('data-id');
 
     try {
-        const data = await api(`videos/${videoId}/thumbnail`);
+        const data = await api(`/videos/${videoId}/thumbnail`);
         
         const img = document.createElement('img');
         img.className = 'video-thumbnail';
@@ -62,7 +37,7 @@ async function fetch_duration(el) {
     const videoId = el.getAttribute('data-id');
 
     try {
-        const data = await api(`videos/${videoId}/duration`);
+        const data = await api(`/videos/${videoId}/duration`);
 
         const duration = document.createElement('div');
         duration.className = 'duration';
@@ -81,52 +56,13 @@ async function fetch_duration(el) {
 }
 
 
-const videos_container = document.getElementById("videos");
-let loading_videos = false;
-let has_more_videos = true;
-
-async function load_more_videos() {
-    if (loading_videos || !has_more_videos) return;
-
-    loading_videos = true;
-
-    try {
-        const data = await api('videos');
-
-        if (data.videos.length === 0) {
-            has_more_videos = false;
-            return;
-        }
-
-        for (const video of data.videos) {
-            const video_el = create_video_el(video);
-
-            videos_container.appendChild(video_el);
-
-            fetch_thumbnail(video_el);
-            fetch_duration(video_el);
-        }
-    } catch (error) {
-        console.error('Не удалось загрузить видео:', error);
-    } finally {
-        loading_videos = false;
-    }
-
-    if (should_load_more()) {
-        load_more_videos();
-    }
+export function init_video(video_el) {
+    fetch_thumbnail(video_el);
+    fetch_duration(video_el);
 }
 
 
-function should_load_more() {
-    return (
-        window.innerHeight + window.scrollY >=
-        document.documentElement.scrollHeight - 300
-    );
-}
-
-
-function create_video_el(video_state) {
+export function create_video_el(video_state) {
     const video_el = document.createElement('a');
 
     video_el.className = 'video';
@@ -147,27 +83,3 @@ function create_video_el(video_state) {
 
     return video_el;
 }
-
-
-function init_video(video_el) {
-    fetch_thumbnail(video_el);
-    fetch_duration(video_el);
-}
-
-
-
-function handle_scroll() {
-    if (should_load_more()) {
-        load_more_videos();
-    }
-}
-
-
-function main() {
-    document.querySelectorAll('.video').forEach(init_video);
-    window.addEventListener('scroll', handle_scroll);
-    load_more_videos();
-}
-
-
-main();

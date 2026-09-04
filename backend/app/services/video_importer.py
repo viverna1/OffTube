@@ -2,8 +2,8 @@
 import os
 import re
 
-from core.data.config_storage import Config
-import core.utils as utils
+from app.data.config_storage import Config
+import app.utils as utils
 
 
 VIDEO_ID_PATTERN = r'\[(.*?)\]'

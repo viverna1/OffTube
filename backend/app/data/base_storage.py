@@ -23,6 +23,9 @@ class Storage(ABC):
     def save(self):
         with open(self.filepath, 'w', encoding='utf-8') as f:
             json.dump(self._data, f, indent=4, ensure_ascii=False)
+
+    def get_all(self):
+        return self._data
     
     @abstractmethod
     def _init_empty(self):

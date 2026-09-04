@@ -2,30 +2,20 @@
 import os
 import ffmpeg
 
-from core.data.videos_storage import Videos
-from core.data.config_storage import Config
-import core.utils as utils
+from app.data.videos_storage import Videos
+from app.data.config_storage import Config
 
 
-def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
+def _generate_metadata(video_id, field, generator_func):
     video_state = Videos.get_video(video_id)
 
-    print(video_id)
+    if not video_state: return None, False
+    if video_state[field]: return video_state[field], False
 
-    if not video_state:
-        return None, False
-
-    if video_state["thumbnail"]:
-        return (video_state["thumbnail"], False)
-
-    thumbnail_path = _generate_thumbnail(video_state)
-    thumbnail = os.path.basename(thumbnail_path)
-
-    video_state["thumbnail"] = thumbnail
+    video_state[field] = generator_func(video_state)
     Videos.update_video(video_state)
 
-    return (thumbnail, True)
-
+    return video_state[field], True
 
 
 def _generate_thumbnail(video_state):
@@ -51,6 +41,24 @@ def _generate_thumbnail(video_state):
     return output_path
 
 
+def fetch_thumbnail(video_id: str) -> tuple[str | None, bool]:
+    video_state = Videos.get_video(video_id)
+
+    if not video_state:
+        return None, False
+
+    if video_state["thumbnail"]:
+        return (video_state["thumbnail"], False)
+
+    thumbnail_path = _generate_thumbnail(video_state)
+    thumbnail = os.path.basename(thumbnail_path)
+
+    video_state["thumbnail"] = thumbnail
+    Videos.update_video(video_state)
+
+    return (thumbnail, True)
+
+
 def _calculate_percentile_time(time, percent):
     time_seconds = time * (percent / 100)
     
@@ -71,19 +79,18 @@ def _get_video_duration(video_state: dict) -> float:
     return duration
 
 
-def fetch_duration(video_id) -> tuple[str | None, bool]:
+def fetch_duration(video_id) -> tuple[float | None, bool]:
     video_state = Videos.get_video(video_id)
 
     if not video_state:
         return None, False
 
-    if video_state["duration"]:
-        return (video_state["duration"], False)
+    if video_state["duration"] is not None:
+        return video_state["duration"], False
 
     duration = _get_video_duration(video_state)
-    duration_str = utils.formate_time(duration)
 
-    video_state["duration"] = duration_str
+    video_state["duration"] = duration
     Videos.update_video(video_state)
 
-    return (duration_str, True)
+    return duration, True
