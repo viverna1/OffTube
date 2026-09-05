@@ -1,6 +1,9 @@
 # logger.py
 import logging
 
+IMPORTANT = 25
+
+
 class COLORS:
     RESET = '\033[0m'
     CYAN = '\033[96m'
@@ -9,14 +12,21 @@ class COLORS:
     RED = '\033[91m'
     MAGENTA = '\033[95m'
 
+
 LEVEL_COLORS = {
     logging.DEBUG: COLORS.CYAN,
     logging.INFO: COLORS.GREEN,
+    IMPORTANT: COLORS.YELLOW,
     logging.WARNING: COLORS.YELLOW,
     logging.ERROR: COLORS.RED,
     logging.CRITICAL: COLORS.MAGENTA,
 }
 
+
+class CustomLogger(logging.Logger):
+    def important(self, message: object, *args, **kwargs, ) -> None:
+        if self.isEnabledFor(IMPORTANT):
+            self._log(IMPORTANT, message, args, **kwargs)
 
 class CustomFormatter(logging.Formatter):
     def format(self, record):
@@ -44,4 +54,24 @@ def setup_logging():
 
     logging.basicConfig(level=logging.DEBUG, handlers=[handler])
 
+    # Фильтр для логов Flask
     logging.getLogger('werkzeug').addFilter(StaticFilter())
+
+    # Кастомный уровень логирования "IMPORTANT"
+    logging.setLoggerClass(CustomLogger)
+    logging.addLevelName(IMPORTANT, "IMPORTANT")
+
+
+if __name__ == "__main__":
+    setup_logging()
+    log = logging.getLogger(__name__)
+    log.debug("Debug message")
+    log.info("Info message")
+    log.warning("Warning message")
+    log.error("Error message")
+    log.critical("Critical message")
+    log.important("Important message")  # Custom level
+    try:
+        x = 1 / 0
+    except Exception as e:
+        log.exception("Exception:")

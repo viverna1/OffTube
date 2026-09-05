@@ -1,5 +1,4 @@
-# utils.py
-
+# time_utils.py
 # def formate_time(time: float):
 #     hours = int(time // 3600)
 #     minutes = int((time % 3600) // 60)
@@ -9,12 +8,3 @@
 #         return f"{hours}:{minutes:02d}:{seconds:02d}"
 #     else:
 #         return f"{minutes:2d}:{seconds:02d}"
-
-class IdGenerator:
-    current_id = 0
-
-    @classmethod
-    def get_id(cls) -> str:
-        cls.current_id += 1
-        return str(cls.current_id)
-    

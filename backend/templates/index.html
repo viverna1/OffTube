@@ -7,7 +7,7 @@
 {% block content %}
     <main id="videos">
         {% for video in videos %}
-            <a class="video" href="{{ url_for('watch', video_id=video.id) }}" data-id="{{ video.id }}">
+            <a class="video" href="{{ url_for('pages.watch', video_id=video.id) }}" data-id="{{ video.id }}">
                 <div class="thumbnail-wrapper">
                     {% if video.thumbnail %}
                         <img class="video-thumbnail" src="{{ url_for('static', filename='thumbnails/' + video.thumbnail) }}" alt="▶">

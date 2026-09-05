@@ -41,5 +41,9 @@ class VideoStorage(Storage):
         self._data.append(video_state)
         self.save()
 
+    def clear_cache(self):
+        self._data = []
+        self.save()
+
 
 Videos = VideoStorage(VIDEOS_PATH)
