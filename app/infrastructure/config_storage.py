@@ -9,7 +9,7 @@ log = logging.getLogger(__name__)
 CONFIG_PATH = 'data/config.json'
 
 
-class ConfigStorage(FileStorage[dict]):
+class ConfigStorage(FileStorage):
     _data: dict
     
     def __init__(self, filepath: str) -> None:
