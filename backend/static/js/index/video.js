@@ -64,12 +64,12 @@ export function init_video(video_el) {
 }
 
 
-export function create_video_el(video_state) {
+export function create_video_el(video) {
     const video_el = document.createElement('a');
 
     video_el.className = 'video';
-    video_el.href = `/watch/${video_state.id}`;
-    video_el.dataset.id = video_state.id;
+    video_el.href = `/watch/${video.id}`;
+    video_el.dataset.id = video.id;
 
     video_el.innerHTML = `
         <div class="thumbnail-wrapper">
@@ -80,7 +80,7 @@ export function create_video_el(video_state) {
                 </svg>
             </div>
         </div>
-        <p class="video-title">${video_state.name}</p>
+        <p class="video-title">${video.name}</p>
     `;
 
     return video_el;

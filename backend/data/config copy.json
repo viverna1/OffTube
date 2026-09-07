@@ -1,0 +1,22 @@
+[
+    {
+        "static": {
+            "thumbnails_path": "\\backend\\static\\thumbnails"
+        },
+        "settings": {
+            "application_path": "G:\\Git\\Dev\\OffTube",
+            "video_directories": [
+                "G:\\Git\\Dev\\OffTube\\vids",
+                "G:\\Media\\youtube\\67"
+            ],
+            "video_extensions": [
+                ".mp4",
+                ".mkv",
+                ".avi"
+            ],
+            "thumbnail_percent": 30,
+            "init_videos_count": 40,
+            "videos_per_load": 10
+        }
+    }
+]

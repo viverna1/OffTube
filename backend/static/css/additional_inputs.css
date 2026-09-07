@@ -1,0 +1,27 @@
+/* additional_inputs.css */
+
+input {
+    background-color: var(--color-hover);
+    /* background: none; */
+    color: var(--color-text);
+
+    /* height: var(--input-height); */
+    /* width: var(--input-width); */
+
+    padding: 10px;
+
+    border-radius: var(--input-border-radius);
+    border: var(--color-input-border) solid 1.5px;
+
+    transition: border-color 0.1s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+input[type="number"] {
+    min-width: 40px;
+}
+

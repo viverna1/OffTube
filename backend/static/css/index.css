@@ -10,24 +10,24 @@
 }
 
 .video {
-    color: white;
+    color: var(--color-text);
     width: 100%;
     text-decoration: none;
-    cursor: pointer;
+    cursor: default;
     
     display: flex;
     flex-direction: column;
 
     border-radius: 12px;
-    /* overflow: hidden; */
     height: auto;
 
     transition: background-color 0.1s ease;
 }
 
 .video:hover {
-    background-color: rgba(50, 50, 50, 0.5);
+    background-color: var(--color-hover);
 }
+
 
 .thumbnail-wrapper {
     position: relative;
@@ -63,9 +63,8 @@
 
 .video-title {
     margin: 8px 10px;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    color: #fff;
+    font-size: var(--font-size-video);
+    color: var(--color-text);
     
     overflow: hidden;
     text-overflow: ellipsis;
@@ -86,4 +85,11 @@
     border-radius: 4px;
     pointer-events: none;
     font-size: 13px;
+}
+
+
+#no-videos {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 30px;
 }

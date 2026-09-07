@@ -1,9 +1,11 @@
+# run.py
+import logging
+
 from app import create_app
-from app.core import logger
+from app.shared import logger
 
 
 if __name__ == '__main__':
-    logger.setup_logging()
-
+    logger.setup_logging(logging.DEBUG)
     app = create_app()
-    app.run(debug=False) 
+    app.run(debug=True) 

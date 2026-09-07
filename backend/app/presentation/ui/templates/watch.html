@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/watch.css') }}">
+{% endblock %}
+
+{% block content %}
+    <div id="player">
+        <video src="{{ url_for('files.serve_video_file', video_id=video.id) }}" controls></video>
+    </div>
+{% endblock %}

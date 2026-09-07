@@ -2,10 +2,10 @@
 from flask import Blueprint, url_for, request
 import logging
 
-from app.data import Config, Videos
-import app.services.video_metadata as video_metadata
-from app.utils import response_err, response_ok
-
+from app.application import video_metadata
+from app.application.video_service import videoService
+from app.application.config_service import configService
+from app.utils.responses import response_ok, response_err
 
 log = logging.getLogger(__name__)
 api_bp = Blueprint('api', __name__, url_prefix='/api')
@@ -35,17 +35,17 @@ def get_video_duration(video_id):
 
 
 @api_bp.route('/videos')
-def get_videos():
+def fetch_videos():
     offset = request.args.get('offset', default=0, type=int)
     limit = request.args.get('limit', default=10, type=int)
 
-    videos = Videos.get_videos(offset, limit)
+    videos = videoService.get_banch_videos(offset, limit)
 
-    return response_ok({ "videos": videos })
+    return response_ok({ "videos": [video.to_dict() for video in videos] })
 
 
 @api_bp.route('/config')
 def get_config():
-    config = Config.get_all()
+    config = configService.get_data()
 
     return response_ok({ "config": config })

@@ -1,3 +1,30 @@
+/* base.css */
+:root {
+    --color-primary: #18191b;
+    --color-secondary: #0c0c0d;
+    --color-text: #fff;
+    --color-hover: #252526;
+
+    --color-accent: #FF8C00;
+    --color-button-hover: #FFA500;
+    --color-button-active: #d8900a;
+    --color-disabled: #474747;
+    --color-input-border: #949494;
+    
+    --font-size-base: 16px;
+    --font-size-video: 16px;
+    --font-size-s: 0.875rem;
+    --font-size-l: 1.20rem;
+    --font-size-xl: 2rem;
+
+    --input-border-radius: 8px;
+    --input-button-width: 100px;
+    /* --input-height: 40px; */
+    /* --input-width: 300px; */
+    --input-padding: 10px;
+}
+
+
 @font-face {
     font-family: 'SNPro';
     src: url('/static/SNPro.ttf') format('truetype');
@@ -5,26 +32,28 @@
     font-style: normal;
 }
 
+
 * {
     font-family: 'SNPro', sans-serif;
 }
 
+
 body {
-    background-color: #18191b;
+    background-color: var(--color-primary);
     height: 100vh;
     width: 100vw;
     margin: 0;
 }
 
 header {
-    box-sizing: border-box;
-    width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    background-color: var(--color-secondary);
     padding: 0 20px;
-    color: #fff;
+    color: var(--color-text);
     justify-content: space-between;
 }
 
@@ -35,7 +64,7 @@ header {
     border: none;
     color: var(--whiteColor);
     cursor: pointer;
-    font-size: 120%;
+    font-size: var(--font-size-l);
     padding: 5px;
     height: 64%;
     aspect-ratio: 1/1;
@@ -48,10 +77,23 @@ header {
     text-decoration: none;
 }
 
-#title {
-    user-select: none;
+#logo {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
     text-decoration: none;
+    user-select: none;
     color: #fff;
+    height: 80%;
+}
+
+#logo-image {
+    height: 100%;
+}
+
+#logo-title {
+    font-size: var(--font-size-xl);
 }
 
 
@@ -59,4 +101,30 @@ main {
     box-sizing: border-box;
     width: 100%;
     height: 100%;
+}
+
+
+.btn {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+
+    /* height: var(--input-height); */
+    /* width: var(--input-button-width); */
+
+    padding: var(--input-padding);
+
+    border-radius: var(--input-border-radius);
+    border: var(--color-input-border) solid 1.5px;
+}
+
+.btn:hover {
+    background-color: var(--color-button-hover);
+}
+
+.btn:active {
+    background-color: var(--color-button-active);
+}
+
+.btn:disabled {
+    background-color: var(--color-disabled);
 }

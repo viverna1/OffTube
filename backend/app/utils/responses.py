@@ -1,7 +1,7 @@
 # responses.py
 from flask import jsonify
     
-def response_err(message, status_code):
+def response_err(message: str, status_code: int):
     response = jsonify({'ok': False, 'error': message})
     response.status_code = status_code
     return response

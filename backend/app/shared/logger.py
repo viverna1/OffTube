@@ -1,8 +1,7 @@
 # logger.py
 import logging
 
-IMPORTANT = 25
-
+FLASK = 19
 
 class COLORS:
     RESET = '\033[0m'
@@ -11,25 +10,26 @@ class COLORS:
     YELLOW = '\033[93m'
     RED = '\033[91m'
     MAGENTA = '\033[95m'
+    PURPLE = '\033[38;5;63m'
+    BOLD = '\033[1m'
 
 
 LEVEL_COLORS = {
     logging.DEBUG: COLORS.CYAN,
     logging.INFO: COLORS.GREEN,
-    IMPORTANT: COLORS.YELLOW,
     logging.WARNING: COLORS.YELLOW,
     logging.ERROR: COLORS.RED,
-    logging.CRITICAL: COLORS.MAGENTA,
+    logging.CRITICAL: COLORS.BOLD + COLORS.RED,
+    FLASK: COLORS.PURPLE
 }
 
 
-class CustomLogger(logging.Logger):
-    def important(self, message: object, *args, **kwargs, ) -> None:
-        if self.isEnabledFor(IMPORTANT):
-            self._log(IMPORTANT, message, args, **kwargs)
 
 class CustomFormatter(logging.Formatter):
     def format(self, record):
+        if record.name == "werkzeug" and record.levelno == logging.INFO:
+            record.levelname = "FLASK"
+            record.levelno = FLASK
         color = LEVEL_COLORS.get(record.levelno, '')
         record.levelname = f"{color}{record.levelname}{COLORS.RESET}"
         return super().format(record)
@@ -45,21 +45,17 @@ class StaticFilter(logging.Filter):
                 )
 
 
-def setup_logging():
+def setup_logging(level=logging.DEBUG):
     handler = logging.StreamHandler()
     handler.setLevel(logging.DEBUG)
 
-    format='%(name)s [%(levelname)s] %(funcName)s: %(message)s'
+    format='%(filename)s:%(lineno)s [%(levelname)s]: %(message)s'
     handler.setFormatter(CustomFormatter(format))
 
-    logging.basicConfig(level=logging.DEBUG, handlers=[handler])
+    logging.basicConfig(level=level, handlers=[handler])
 
     # Фильтр для логов Flask
     logging.getLogger('werkzeug').addFilter(StaticFilter())
-
-    # Кастомный уровень логирования "IMPORTANT"
-    logging.setLoggerClass(CustomLogger)
-    logging.addLevelName(IMPORTANT, "IMPORTANT")
 
 
 if __name__ == "__main__":
@@ -70,7 +66,6 @@ if __name__ == "__main__":
     log.warning("Warning message")
     log.error("Error message")
     log.critical("Critical message")
-    log.important("Important message")  # Custom level
     try:
         x = 1 / 0
     except Exception as e:
