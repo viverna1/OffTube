@@ -6,32 +6,22 @@ from app.infrastructure.file_storage import FileStorage
 
 log = logging.getLogger(__name__)
 
-CONFIG_PATH = 'data/config.json'
 
-
-class ConfigStorage(FileStorage):
-    _data: dict
-    
-    def __init__(self, filepath: str) -> None:
-        super().__init__(filepath)
-        self._data = self.load()
+class ConfigStorage():
+    def __init__(self, file_storage: FileStorage) -> None:
+        self._file_storage = file_storage
 
     def get_setting(self, key: str) -> Any:
-        return self._data.get(key)
+        return self._file_storage.load().get(key)
 
     def set_setting(self, key: str, value: Any) -> None:
         if self.get_setting(key) is None:
             log.error("Key %s not found in config", key)
             return
-        self._data[key] = value
-        self.save(self._data)
+        new_data = self._file_storage.load()
+        new_data[key] = value
+        self._file_storage.save_in_file(new_data)
 
-    def get_data(self):
-        return self._data
-
-    @staticmethod
-    def create():
-        return ConfigStorage(CONFIG_PATH)
-        
-
-configStorage = ConfigStorage.create()
+    def get_all(self):
+        return self._file_storage.load()
+    

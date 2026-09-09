@@ -14,7 +14,6 @@ admin_bp = Blueprint('admin', __name__, url_prefix='/admin')
 @admin_bp.route('/clear_cache')
 def clear_videos_cache():
     try:
-        reset_id()
         videoService.clear_cache()
         video_importer.sync_videos()
 

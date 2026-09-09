@@ -5,3 +5,5 @@ __pycache__
 .vscode
 test
 node_modules
+log.md
+.pytest_cache
