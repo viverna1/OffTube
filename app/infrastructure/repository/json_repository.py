@@ -1,4 +1,4 @@
-# file_storage.py
+# json_repository.py
 import json
 import os
 import logging
@@ -6,7 +6,7 @@ import logging
 log = logging.getLogger(__name__)
 
 
-class FileStorage[T]:
+class JsonRepository[T]:
     def __init__(self, filepath: str) -> None:
         self.filepath = filepath
 

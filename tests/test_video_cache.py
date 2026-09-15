@@ -1,9 +1,9 @@
-# test_videos_cache.py
+# test_video_cache.py
 import pytest
 
 from app.domain.video import Video
-from app.infrastructure.cache_storage import CacheStorage
-from app.infrastructure.video_cache import VideoCache
+from app.infrastructure.repository.cache_repository import CacheRepository
+from app.infrastructure.repository.video_cache import VideoCache
 
 
 def create_video(number: str):
@@ -20,24 +20,24 @@ def create_video(number: str):
 # ==================== Fixtures ====================
 
 @pytest.fixture
-def mock_cache_storage(mocker):
-    mock_load = mocker.patch.object(CacheStorage, 'load', return_value={})
-    mock_save = mocker.patch.object(CacheStorage, '_save')
+def mock_cache_repository(mocker):
+    mock_load = mocker.patch.object(CacheRepository, 'load', return_value={})
+    mock_save = mocker.patch.object(CacheRepository, '_save')
     return mock_load, mock_save
 
 @pytest.fixture
-def cache_storage(mock_cache_storage):
-    return CacheStorage("")
+def cache_repository(mock_cache_repository):
+    return CacheRepository("")
 
 @pytest.fixture
-def video_cache(cache_storage):
-    return VideoCache(cache_storage)
+def video_cache(cache_repository):
+    return VideoCache(cache_repository)
 
 
 # ==================== Tests ====================
 
-def test_set_and_get(video_cache, mock_cache_storage):
-    mock_load, mock_save = mock_cache_storage
+def test_set_and_get(video_cache, mock_cache_repository):
+    mock_load, mock_save = mock_cache_repository
 
     video = create_video("1")
     video_cache.set_video(video)
@@ -46,8 +46,8 @@ def test_set_and_get(video_cache, mock_cache_storage):
 
     mock_save.assert_called_once()
 
-def test_add_videos(video_cache, mock_cache_storage):
-    mock_load, mock_save = mock_cache_storage
+def test_add_videos(video_cache, mock_cache_repository):
+    mock_load, mock_save = mock_cache_repository
 
     video1 = create_video("1")
     video2 = create_video("2")
@@ -56,8 +56,8 @@ def test_add_videos(video_cache, mock_cache_storage):
     assert video_cache.get_by_id(video2.id) == video2
     mock_save.assert_called()
 
-def test_delete(video_cache, mock_cache_storage):
-    mock_load, mock_save = mock_cache_storage
+def test_delete(video_cache, mock_cache_repository):
+    mock_load, mock_save = mock_cache_repository
 
     video = create_video("2")
     video_cache.set_video(video)
@@ -66,11 +66,11 @@ def test_delete(video_cache, mock_cache_storage):
     
     mock_save.assert_called()
 
-def test_invalid_id(video_cache, mock_cache_storage):
+def test_invalid_id(video_cache, mock_cache_repository):
     assert video_cache.get_by_id("1") is None
 
-def test_delete_nonexistent(video_cache, mock_cache_storage):
-    mock_load, mock_save = mock_cache_storage
+def test_delete_nonexistent(video_cache, mock_cache_repository):
+    mock_load, mock_save = mock_cache_repository
     video_cache.delete("999")
 
     mock_save.assert_not_called()

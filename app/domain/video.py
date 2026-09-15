@@ -15,8 +15,8 @@ class Video:
         return os.path.exists(self.path)
 
     @classmethod
-    def from_dict(cls, data: dict) -> Self:
-        return cls(**data)
+    def from_dict(cls, params: dict) -> Self:
+        return cls(**params)
 
     def to_dict(self) -> dict:
         return asdict(self)

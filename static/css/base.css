@@ -2,14 +2,17 @@
 :root {
     --color-primary: #18191b;
     --color-secondary: #0c0c0d;
+    
     --color-text: #fff;
     --color-hover: #252526;
+    --color-active: #ababab;
 
-    --color-accent: #FF8C00;
-    --color-button-hover: #FFA500;
-    --color-button-active: #d8900a;
+    /* --color-accent: #FF8C00; */
+    /* --color-button-hover: #FFA500; */
+    /* --color-button-active: #d8900a; */
+
     --color-disabled: #474747;
-    --color-input-border: #949494;
+    --color-input-border: #6e6e6e;
     
     --font-size-base: 16px;
     --font-size-video: 16px;
@@ -18,9 +21,6 @@
     --font-size-xl: 2rem;
 
     --input-border-radius: 8px;
-    --input-button-width: 100px;
-    /* --input-height: 40px; */
-    /* --input-width: 300px; */
     --input-padding: 10px;
 }
 
@@ -57,6 +57,14 @@ header {
     justify-content: space-between;
 }
 
+#right-panel {
+    display: flex;
+    height: 100%;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
 
 .header-btn {
     display: flex;
@@ -66,7 +74,7 @@ header {
     cursor: pointer;
     font-size: var(--font-size-l);
     padding: 5px;
-    height: 64%;
+    height: 100%;
     aspect-ratio: 1/1;
 
     text-align: center;
@@ -75,7 +83,13 @@ header {
 
     border-radius: 50%;
     text-decoration: none;
+    box-sizing: border-box;
 }
+
+.header-btn:hover {
+    text-shadow: 0px 0px 3px #fff;
+}
+
 
 #logo {
     display: flex;
@@ -105,11 +119,8 @@ main {
 
 
 .btn {
-    background-color: var(--color-accent);
+    background-color: var(--color-secondary);
     color: var(--color-text);
-
-    /* height: var(--input-height); */
-    /* width: var(--input-button-width); */
 
     padding: var(--input-padding);
 
@@ -118,7 +129,7 @@ main {
 }
 
 .btn:hover {
-    background-color: var(--color-button-hover);
+    background-color: var(--color-hover);
 }
 
 .btn:active {
@@ -127,4 +138,24 @@ main {
 
 .btn:disabled {
     background-color: var(--color-disabled);
+}
+
+input {
+    background-color: var(--color-secondary);
+    color: var(--color-text);
+
+    /* height: var(--input-height); */
+    /* width: var(--input-width); */
+
+    padding: var(--input-padding);
+
+    border-radius: var(--input-border-radius);
+    border: var(--color-input-border) solid 1.5px;
+
+    transition: border-color 0.1s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-active);
 }

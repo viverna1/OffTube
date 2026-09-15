@@ -13,16 +13,21 @@
 </head>
 <body>
     <header>
-        <a id="logo" href="/">
+        <a id="logo" href="#">
             <img id="logo-image" src="../static/logo.png" alt="logo">
             <h1 id="logo-title">OffTube</h1>
         </a>
-        
+
         {% block header %}{% endblock %}
 
-        <a id="settings-btn" class="header-btn" href="{{ url_for('pages.settings') }}">
-            <i class="fas fa-cog"></i>
-        </a>
+        <div id="right-panel">
+            <a id="add-video-btn" class="header-btn" href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+            <a id="settings-btn" class="header-btn" href="{{ url_for('pages.settings') }}">
+                <i class="fas fa-cog"></i>
+            </a>
+        </div>
     </header>
 
     {% block content %}{% endblock %}

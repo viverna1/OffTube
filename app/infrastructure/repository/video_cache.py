@@ -2,18 +2,18 @@
 import logging
 
 from app.domain.video import Video
-from app.infrastructure.cache_storage import CacheStorage
+from app.infrastructure.repository.cache_repository import CacheRepository
 
 log = logging.getLogger(__name__)
 
 
 class VideoCache():
-    def __init__(self, cache: CacheStorage):
-        self._cache: CacheStorage = cache
+    def __init__(self, cache: CacheRepository):
+        self._cache: CacheRepository = cache
 
     # getters
     def get_all(self) -> dict[str, Video]:
-        return {key: Video.from_dict(video) for key, video in self._cache.get_all().items()}
+        return {video_id: Video.from_dict(video) for video_id, video in self._cache.get_all().items()}
 
     def get_by_id(self, video_id: str) -> Video | None:
         video = self._cache.get(video_id)

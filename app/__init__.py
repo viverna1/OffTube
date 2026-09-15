@@ -4,46 +4,57 @@ from flask import Flask
 # ==================== CONSTS ====================
 VIDEOS_CACHE_PATH = 'data/videos.json'
 CONFIG_PATH = 'data/config.json'
+THUMBNAILS_PATH = "static\\thumbnails"
+VIDEO_ID_PATTERN = r'\[(.*?)\]'
 
 # ==================== INFRASTRUCTURE ====================
-from app.infrastructure.file_storage import FileStorage
-from app.infrastructure.cache_storage import CacheStorage
-from app.infrastructure.video_cache import VideoCache
-from app.infrastructure.config_storage import ConfigStorage
+from app.infrastructure.repository.json_repository import JsonRepository
+from app.infrastructure.repository.cache_repository import CacheRepository
+from app.infrastructure.repository.video_cache import VideoCache
+from app.infrastructure.repository.config_repository import ConfigRepository
+from app.infrastructure.video_importer import VideoImporter
 
-cacheStorage = CacheStorage(VIDEOS_CACHE_PATH)
-videoCache = VideoCache(cacheStorage)
+cache_storage = CacheRepository(VIDEOS_CACHE_PATH)
+video_cache = VideoCache(cache_storage)
 
-configFileStorage = FileStorage(CONFIG_PATH)
-configStorage = ConfigStorage(configFileStorage)
+config_json_repo = JsonRepository(CONFIG_PATH)
+config_storage = ConfigRepository(config_json_repo)
 
 # ==================== APPLICATION ====================
 from app.application.video_service import VideoService
 from app.application.config_service import ConfigService
+from app.application.video_metadata_service import VideoMetadataService
 
-videoService = VideoService(videoCache)
-configService = ConfigService(configStorage)
+video_service = VideoService(video_cache)
+config_service = ConfigService(config_storage)
+video_metadata_service = VideoMetadataService(video_service, config_service, THUMBNAILS_PATH)
 
-# ==================== PRESENTATION ====================
-# from app.presentation.pages import pages_bp
-# from app.presentation.api import api_bp
-# from app.presentation.files import files_bp
-# from app.presentation.admin import admin_bp
+# TODO VideoImporter принадлежит к INFRASTRUCTURE, передвинуть
+video_importer = VideoImporter(video_service, config_service, THUMBNAILS_PATH, VIDEO_ID_PATTERN)
 
-
+# ==================== App ====================
 def create_app():
-    configService.fix_application_path()
-    # video_importer.sync_videos()
+    config_service.fix_application_path()
+    video_importer.sync_videos()
 
     app = Flask(
         __name__,
-        template_folder="presentation/templates",
+        template_folder="presentation/ui/templates",
         static_folder="../static"
     )
 
-    # app.register_blueprint(pages_bp)
-    # app.register_blueprint(api_bp)
-    # app.register_blueprint(files_bp)
+    # app.extensions['VIDEO_SERVICE'] = video_service
+    # app.extensions['CONFIG_SERVICE'] = config_service
+
+    # ==================== PRESENTATION ====================
+    from app.presentation.ui.pages import pages_bp
+    from app.presentation.api.video import api_bp
+    from app.presentation.api.files import files_bp
+    # from app.presentation.api.admin import admin_bp
+
+    app.register_blueprint(pages_bp)
+    app.register_blueprint(api_bp)
+    app.register_blueprint(files_bp)
     # app.register_blueprint(admin_bp)
 
     return app

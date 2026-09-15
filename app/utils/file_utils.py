@@ -7,6 +7,5 @@ def get_file_name(file_path: str) -> str:
 def get_file_size(file_path: str) -> int:
     return os.path.getsize(file_path)
 
-
 def file_exists(file_path: str) -> int:
     return os.path.exists(file_path)

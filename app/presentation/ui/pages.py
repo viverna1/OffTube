@@ -2,8 +2,8 @@
 from flask import Blueprint, render_template
 import logging
 
-from app.application.config_service import configService
-from app.application.video_service import videoService
+from app import config_service
+from app import video_service
 
 log = logging.getLogger(__name__)
 pages_bp = Blueprint('pages', __name__)
@@ -11,14 +11,14 @@ pages_bp = Blueprint('pages', __name__)
 
 @pages_bp.route('/')
 def index():
-    init_videos_count = configService.get_setting("init_videos_count")
-    videos = videoService.get_banch_videos(0, init_videos_count)
+    init_videos_count = config_service.get_setting("init_videos_count")
+    videos = video_service.get_banch_videos(0, init_videos_count)
     return render_template('/index.html', videos=videos)
 
 
 @pages_bp.route('/watch/<string:video_id>')
 def watch(video_id):
-    video = videoService.get_video(video_id)
+    video = video_service.get_video(video_id)
 
     if not video:
         return "Video not found", 404

@@ -4,12 +4,16 @@
         "G:\\Git\\Dev\\OffTube\\vids",
         "G:\\Media\\youtube\\67"
     ],
+    "video_directories2": [
+        "G:\\Media\\youtube\\3",
+        "G:\\Media\\youtube\\1"
+    ],
     "video_extensions": [
         ".mp4",
         ".mkv",
         ".avi"
     ],
     "thumbnail_percent": 30,
-    "init_videos_count": 40,
-    "videos_per_load": 10
+    "init_videos_count": 1,
+    "videos_per_load": 1
 }

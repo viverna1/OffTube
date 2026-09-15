@@ -2,7 +2,7 @@
 import logging
 
 from app.domain.video import Video
-from app.infrastructure.video_cache import VideoCache
+from app.infrastructure.repository.video_cache import VideoCache
 
 log = logging.getLogger(__name__)
 
@@ -24,26 +24,28 @@ class VideoService:
 
         return video
 
-    def get_batch_videos(self, offset: int, limit: int) -> list[Video]:
+    def get_banch_videos(self, offset: int, limit: int) -> list[Video]:
         all_videos = list(self._cache.get_all().values())
         result = all_videos[offset:offset + limit]
-        log.debug(f"getting videos with offset={offset}, limit={limit}. Returning {len(result)} videos.")
+        log.debug("getting videos with offset=%s, limit=%s. Returning %s videos.", offset, limit, len(result))
         return result
     
-    # def get_batch_videos2(self, offset: int, limit: int) -> list[Video]:
-    #     all_videos: list[Video] = self._cache.get_all().keys()
-    #     c = all_videos
+    # def get_banch_videos2(self, offset: int, limit: int) -> list[Video]:
+    #     all_videos: list[Video] = list(self._cache.get_all().values())
     #     result = []
     #     index = offset
 
     #     while len(result) < limit and index < len(all_videos):
-    #         video_dict = all_videos[index]
-    #         if video_dict.exists():
-    #             result.append(video_dict)
+    #         video = all_videos[index]
+    #         if video.exists():
+    #             result.append(video)
     #         index += 1
 
     #     log.debug(f"getting videos with offset={offset}, limit={limit}. Returning {len(result)} videos.")
     #     return result
+
+    def get_all(self) -> dict[str, Video]:
+        return self._cache.get_all()
 
     def add_video(self, video: Video):
         self._cache.set_video(video)
