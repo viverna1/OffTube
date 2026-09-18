@@ -20,9 +20,18 @@
         
         {% block header %}{% endblock %}
 
-        <a id="settings-btn" class="header-btn" href="{{ url_for('pages.settings') }}">
-            <i class="fas fa-cog"></i>
-        </a>
+        <div id="header-center">
+
+        </div>
+
+        <div id="header-right">
+            <a id="add-video-btn" class="header-btn" href="#">
+                <i class="fas fa-plus"></i>
+            </a>
+            <a id="settings-btn" class="header-btn" href="{{ url_for('pages.settings') }}">
+                <i class="fas fa-cog"></i>
+            </a>
+        </div>
     </header>
 
     {% block content %}{% endblock %}

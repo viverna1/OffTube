@@ -3,6 +3,6 @@
   "version": "2.0.0",
   "scripts": {
     "app": "cls && python run.py",
-    "tests": "python -m tests.infrastructure"
+    "tests": "pytest"
   }
 }

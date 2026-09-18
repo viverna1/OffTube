@@ -10,6 +10,7 @@ async function fetch_thumbnail(el) {
     const videoId = el.getAttribute('data-id');
 
     try {
+        el.classList.add('loading');
         const data = await api(`/videos/${videoId}/thumbnail`);
         
         const img = document.createElement('img');
@@ -19,15 +20,18 @@ async function fetch_thumbnail(el) {
 
         if (data.generated) {
             setTimeout(() => {
-                placeholder.remove();
+                // placeholder.remove();
                 thumbnail_wrapper.prepend(img);
+                el.classList.remove('loading');
             }, 200);
         } else {
-            placeholder.remove();
+            // placeholder.remove();
             thumbnail_wrapper.prepend(img);
+            el.classList.remove('loading');
         }
     } catch (error) {
         console.log('Не удалось загрузить thumbnail:', error);
+        el.classList.remove('loading');
     }
 }
 
@@ -73,12 +77,8 @@ export function create_video_el(video) {
 
     video_el.innerHTML = `
         <div class="thumbnail-wrapper">
-            <div class="video-thumbnail video-thumbnail-placeholder">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                    <circle cx="50" cy="50" r="48" fill="white"/>
-                    <polygon points="38,28 38,72 72,50" fill="#434343"/>
-                </svg>
-            </div>
+            <div class="video-thumbnail-placeholder"></div>
+            <div class="duration">12:43</div>
         </div>
         <p class="video-title">${video.name}</p>
     `;

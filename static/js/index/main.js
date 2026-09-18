@@ -8,6 +8,7 @@ let has_more_videos = true;
 const config = await get_config();
 let current_offset = config.init_videos_count || 0;
 const VIDEOS_PER_LOAD = config.videos_per_load || 10;
+const VIDEO_CARD_APPEARANCE_DELAY = 10;
 
 
 const videos_container = document.getElementById("videos");
@@ -36,11 +37,18 @@ async function load_more_videos() {
 
         current_offset += data.videos.length;
 
-        for (const video of data.videos) {
-            const video_el = create_video_el(video);
-            videos_container.appendChild(video_el);
-            init_video(video_el);
-        }
+        await new Promise((resolve) => {
+            data.videos.forEach((video, i) => {
+                setTimeout(() => {
+                    const video_el = create_video_el(video);
+                    videos_container.appendChild(video_el);
+
+                    init_video(video_el);
+
+                    if (i === data.videos.length - 1) resolve();
+                }, i * VIDEO_CARD_APPEARANCE_DELAY);
+            });
+        });
 
         if (data.videos.length < VIDEOS_PER_LOAD) {
             has_more_videos = false;

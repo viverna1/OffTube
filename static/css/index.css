@@ -1,3 +1,5 @@
+/* index.css */
+
 #videos {
     box-sizing: border-box;
     height: auto;
@@ -22,14 +24,30 @@
     height: auto;
 
     transition: background-color 0.1s ease;
+    animation: 
+        fadeIn 0.2s ease both,
+        slideRight 0.1s cubic-bezier(0.00, 0.40, 0.40, 1.00) both;
 }
 
 .video:hover {
     background-color: var(--color-hover);
 }
 
+@keyframes fadeIn  {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes slideRight {
+    from { transform: translateX(-200px) }
+    to { transform: translateX(0) }
+}
+
+
+/* ==================== Превью ==================== */
 
 .thumbnail-wrapper {
+    background-color: #2e2e2e;
     position: relative;
     width: 100%;
     aspect-ratio: 16/9;
@@ -37,29 +55,50 @@
     overflow: hidden;
 }
 
+
 .video-thumbnail {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
 
+    animation: fadeIn 0.2s ease both;
+    z-index: 2;
     font-size: 25px;
 }
 
 .video-thumbnail-placeholder {
     width: 100%;
     height: 100%;
-    background-color: #323232;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 48px;
-    color: white;
+    position: relative;
 }
 
-.video-thumbnail-placeholder svg {
-    width: 40%;
-    height: 40%;
+/* .video:not(.loading) .thumbnail-wrapper:not(:has(.video-thumbnail)) .video-thumbnail-placeholder  { */
+.video:not(.loading) .video-thumbnail-placeholder  {
+    background-image: url("../thumbnail-placeholder.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40% 40%;
 }
+.video.loading .video-thumbnail-placeholder  {
+    background-image: url("../spinner.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 36% 36%;
+}
+
+
+.thumbnail-wrapper:has(.video-thumbnail) .video-thumbnail-placeholder {
+    display: none;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+
+/* ==================== Остальное ==================== */
 
 .video-title {
     margin: 8px 10px;

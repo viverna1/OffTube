@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    outline: 1px solid red;
+}
+
+/* Блочные контейнеры */
+div, section, article, aside, main, header, footer, nav {
+    outline-color: rgba(255, 0, 0, 0.5);
+}
+
+/* Текстовые/инлайновые */
+span, p, a, strong, em, small, label {
+    outline-color: rgba(0, 128, 255, 0.6);
+}
+
+/* Формы */
+input, textarea, select, button {
+    outline-color: rgba(0, 200, 0, 0.7);
+}
+
+/* Списки */
+ul, ol, li {
+    outline-color: rgba(255, 165, 0, 0.6);
+}
+
+/* Медиа */
+img, video, svg, canvas {
+    outline-color: rgba(180, 0, 255, 0.7);
+}
+
+*::before, *::after {
+    outline-color: rgba(0, 255, 195, 0.7);
+}
+
+
+.debug-center {
+    background-image:
+        linear-gradient(to right,
+            transparent calc(50% - 0.5px),
+            red calc(50% - 0.5px),
+            red calc(50% + 0.5px),
+            transparent calc(50% + 0.5px)),
+        linear-gradient(to bottom,
+            transparent calc(50% - 0.5px),
+            red calc(50% - 0.5px),
+            red calc(50% + 0.5px),
+            transparent calc(50% + 0.5px));
+}
+
+.debug-center::before {
+    background-image:
+        linear-gradient(to right,
+            transparent calc(50% - 0.5px),
+            blue calc(50% - 0.5px),
+            blue calc(50% + 0.5px),
+            transparent calc(50% + 0.5px)),
+        linear-gradient(to bottom,
+            transparent calc(50% - 0.5px),
+            blue calc(50% - 0.5px),
+            blue calc(50% + 0.5px),
+            transparent calc(50% + 0.5px));
+}

@@ -2,6 +2,8 @@
     "application_path": "G:\\Git\\Dev\\OffTube",
     "video_directories": [
         "G:\\Git\\Dev\\OffTube\\vids",
+        "G:\\Media\\youtube\\3",
+        "G:\\Media\\youtube\\1",
         "G:\\Media\\youtube\\67"
     ],
     "video_directories2": [
@@ -15,5 +17,5 @@
     ],
     "thumbnail_percent": 30,
     "init_videos_count": 1,
-    "videos_per_load": 1
+    "videos_per_load": 10
 }

@@ -7,9 +7,9 @@
     --color-hover: #252526;
     --color-active: #ababab;
 
-    /* --color-accent: #FF8C00; */
-    /* --color-button-hover: #FFA500; */
-    /* --color-button-active: #d8900a; */
+    --color-accent: #faa00f;
+    --color-accent-hover: #ffae44;
+    --color-accent-active: #ffae44;
 
     --color-disabled: #474747;
     --color-input-border: #6e6e6e;
@@ -22,6 +22,8 @@
 
     --input-border-radius: 8px;
     --input-padding: 10px;
+    --input-height: 40px;
+    --input-toggle-width: 36px;
 }
 
 
@@ -35,13 +37,14 @@
 
 * {
     font-family: 'SNPro', sans-serif;
+    /* outline: 1px solid red; */
 }
 
 
 body {
     background-color: var(--color-primary);
-    height: 100vh;
-    width: 100vw;
+    min-height: 100%;
+    min-width: 100%;
     margin: 0;
 }
 
@@ -55,11 +58,21 @@ header {
     padding: 0 20px;
     color: var(--color-text);
     justify-content: space-between;
+    gap: 20px;
 }
 
-#right-panel {
+#header-right {
     display: flex;
     height: 100%;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+#header-center {
+    display: flex;
+    flex: 1;
+    /* height: 100%; */
     padding: 5px;
     gap: 5px;
     box-sizing: border-box;
@@ -122,10 +135,13 @@ main {
     background-color: var(--color-secondary);
     color: var(--color-text);
 
+    height: var(--input-height);
     padding: var(--input-padding);
 
     border-radius: var(--input-border-radius);
     border: var(--color-input-border) solid 1.5px;
+
+    box-sizing: border-box;
 }
 
 .btn:hover {
@@ -144,7 +160,7 @@ input {
     background-color: var(--color-secondary);
     color: var(--color-text);
 
-    /* height: var(--input-height); */
+    height: var(--input-height);
     /* width: var(--input-width); */
 
     padding: var(--input-padding);
@@ -152,6 +168,7 @@ input {
     border-radius: var(--input-border-radius);
     border: var(--color-input-border) solid 1.5px;
 
+    box-sizing: border-box;
     transition: border-color 0.1s ease;
 }
 
@@ -159,3 +176,11 @@ input:focus {
     outline: none;
     border-color: var(--color-active);
 }
+
+
+
+
+
+
+
+

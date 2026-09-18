@@ -17,6 +17,15 @@ def get_video_thumbnail(video_id):
 
     if thumbnail is None: return response_err('Thumbnail generation failed', 404)
 
+    if video_id in ["33b6d189-23b0-41e4-9f13-1381c93333b1",
+                    "934f9583-4f65-4d10-8e95-58a9964e7a5b",
+                    "6d05f050-4ca8-4d46-b580-b4086dbd84c1",
+                    "c23bd07c-9365-4a03-82f7-c9d616230227",
+                    "733a0797-ab27-4bda-b5fc-3ead7fc9b00c"]:
+        from time import sleep
+        sleep(4)
+        return response_err('Thumbnail generation failed', 404)
+
     thumbnail_url = url_for(
         'static',
         filename="thumbnails/" + thumbnail
