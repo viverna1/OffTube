@@ -26,7 +26,7 @@
     transition: background-color 0.1s ease;
     animation: 
         fadeIn 0.2s ease both,
-        slideRight 0.1s cubic-bezier(0.00, 0.40, 0.40, 1.00) both;
+        slideRight 0.2s ease-out both;
 }
 
 .video:hover {
@@ -63,7 +63,7 @@
     height: 100%;
     object-fit: cover;
 
-    animation: fadeIn 0.2s ease both;
+    animation: fadeIn 0.25s ease both;
     z-index: 2;
     font-size: 25px;
 }
@@ -90,11 +90,17 @@
 
 
 .thumbnail-wrapper:has(.video-thumbnail) .video-thumbnail-placeholder {
-    display: none;
+    /* display: none; */
+    animation: fadeOut 0.3s ease;
 }
 
 @keyframes spin {
     to { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut  {
+    from { opacity: 1 }
+    to { opacity: 0 }
 }
 
 

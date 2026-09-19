@@ -1,34 +1,67 @@
 import { api } from "../api.js";
 import { format_duration } from "../utils.js";
 
+const MAX_METADATA_REQUESTS = 5;
+const metadata_queue = [];
+let active_metadata_requests = 0;
 
-async function fetch_thumbnail(el) {
-    const placeholder = el.querySelector('.video-thumbnail-placeholder');
-    if (!placeholder) return;
 
-    const thumbnail_wrapper = el.querySelector('.thumbnail-wrapper');
-    const videoId = el.getAttribute('data-id');
+function process_metadata_queue() {
+    while (
+        active_metadata_requests < MAX_METADATA_REQUESTS &&
+        metadata_queue.length > 0
+    ) {
+        const load_metadata = metadata_queue.shift();
+        active_metadata_requests += 1;
 
-    try {
-        el.classList.add('loading');
-        const data = await api(`/videos/${videoId}/thumbnail`);
-        
+        load_metadata().finally(() => {
+            active_metadata_requests -= 1;
+            process_metadata_queue();
+        });
+    }
+}
+
+
+function enqueue_metadata(load_metadata) {
+    metadata_queue.push(load_metadata);
+    process_metadata_queue();
+}
+
+
+
+function load_thumbnail_image(el, data) {
+    return new Promise((resolve) => {
+        const videoId = el.getAttribute('data-id');
+        const thumbnail_wrapper = el.querySelector('.thumbnail-wrapper');
+        if (!thumbnail_wrapper) return resolve();
+
         const img = document.createElement('img');
         img.className = 'video-thumbnail';
-        img.src = data.thumbnail_path;
         img.alt = '▶';
+        img.decoding = 'async';
 
-        if (data.generated) {
-            setTimeout(() => {
-                // placeholder.remove();
-                thumbnail_wrapper.prepend(img);
-                el.classList.remove('loading');
-            }, 200);
-        } else {
-            // placeholder.remove();
+        img.addEventListener('load', () => {
             thumbnail_wrapper.prepend(img);
+            setTimeout(() => el.classList.remove('loading'), 500);
+            resolve();
+        }, { once: true });
+
+        img.addEventListener('error', () => {
             el.classList.remove('loading');
-        }
+            resolve();
+        }, { once: true });
+
+        img.src = data.thumbnail_path;
+    });
+}
+
+
+async function fetch_thumbnail(el) {
+    const videoId = el.getAttribute('data-id');
+    el.classList.add('loading');
+    try {
+        const data = await api(`/videos/${videoId}/thumbnail`);
+        await load_thumbnail_image(el, data);
     } catch (error) {
         console.log('Не удалось загрузить thumbnail:', error);
         el.classList.remove('loading');
@@ -63,8 +96,8 @@ async function fetch_duration(el) {
 
 
 export function init_video(video_el) {
-    fetch_thumbnail(video_el);
-    fetch_duration(video_el);
+    enqueue_metadata(() => fetch_thumbnail(video_el));
+    enqueue_metadata(() => fetch_duration(video_el));
 }
 
 
@@ -78,7 +111,6 @@ export function create_video_el(video) {
     video_el.innerHTML = `
         <div class="thumbnail-wrapper">
             <div class="video-thumbnail-placeholder"></div>
-            <div class="duration">12:43</div>
         </div>
         <p class="video-title">${video.name}</p>
     `;

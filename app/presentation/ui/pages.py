@@ -12,7 +12,7 @@ pages_bp = Blueprint('pages', __name__)
 @pages_bp.route('/')
 def index():
     init_videos_count = config_service.get_setting("init_videos_count")
-    videos = video_service.get_banch_videos(0, init_videos_count)
+    videos = video_service.get_batch_videos(0, init_videos_count)
     return render_template('/index.html', videos=videos)
 
 

@@ -24,7 +24,7 @@ class VideoService:
 
         return video
 
-    def get_banch_videos(self, offset: int, limit: int) -> list[Video]:
+    def get_batch_videos(self, offset: int, limit: int) -> list[Video]:
         all_videos = list(self._cache.get_all().values())
         result = all_videos[offset:offset + limit]
         log.debug("getting videos with offset=%s, limit=%s. Returning %s videos.", offset, limit, len(result))
